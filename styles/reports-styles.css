@@ -171,6 +171,9 @@ figcaption {
   box-shadow: none;
   width: 22px;
 }
+.zoom {
+  display: none;
+}
 .bottom-material {
   display: block;
   margin-top: 50px;
