@@ -252,8 +252,26 @@ figcaption {
   #for-top-cont img {
     width: 100%;
   }
+  .fig-holder {
+    margin-bottom: 50px;
+  }
+  .fig-holder figure {
+    padding-top: 65px;
+  }
   .fig-nav {
-    display: none;
+    position: absolute;
+    top: 0px; right: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    opacity: 0.24;
+  }
+  .fig-nav img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 17px;
+    padding-bottom: 22px;
   }
   .nav-arrows {
     display: none;
@@ -284,14 +302,30 @@ figcaption {
   #for-top-cont {
     display: none;
   }
+  .fig-holder {
+    margin-bottom: 50px;
+  }
   .fig-holder figure {
     width: 100%;
+    padding-top: 65px;
   }
   .fig-holder img {
     max-width: 100%; /*orig. width: 100%*/
   }
   .fig-nav {
-    display: none;
+    position: absolute;
+    top: 0px; right: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    opacity: 0.24;
+  }
+  .fig-nav img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 17px;
+    padding-bottom: 22px;
   }
   .nav-arrows {
     display: none;
