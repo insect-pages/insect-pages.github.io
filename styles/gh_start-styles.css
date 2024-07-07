@@ -214,6 +214,9 @@ div.images figure:last-child {
   #hero {
     max-width: 85%;
   }
+  .secondary-intro {
+    margin-top: 12px;
+  }
   .secondary-fig figure {
     width: 90%;
   }

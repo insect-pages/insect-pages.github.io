@@ -25,7 +25,7 @@ nav {
   margin-left: 100px; 
   margin-right: 100px;
   */
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 /*
 #return {
@@ -235,6 +235,7 @@ figcaption {
     margin-top: 20px;
     margin-left: 35px;
     margin-right: 35px;
+    margin-bottom: 0px;
   }
   #catcol {
     width: 30%;
@@ -274,8 +275,18 @@ figcaption {
     padding-bottom: 22px;
   }
   .nav-arrows {
-    display: none;
+    position: absolute;
+    top: 0px; right: 0px;
+    width: 40px;
+    height: 100px;
+    opacity: 0.22;
   }
+  .arrow {
+    font-size: 250%;
+    text-decoration: none;
+    line-height: 0.9;
+    color: black;
+  }  
 }
 @media (max-width: 750px) {
   html {
@@ -288,6 +299,7 @@ figcaption {
     margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
   }
   #catcol {
     width: 40%;
@@ -322,13 +334,23 @@ figcaption {
   .fig-nav img {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 28px;
+    padding-left: 28px; /*Orig. 28px L-R, 17px T, 22px B */
     padding-right: 28px;
     padding-top: 17px;
     padding-bottom: 22px;
   }
   .nav-arrows {
-    display: none;
+    position: absolute;
+    top: 0px; right: 0px;
+    width: 40px;
+    height: 100px;
+    opacity: 0.22;
+  }
+  .arrow {
+    font-size: 275%;
+    text-decoration: none;
+    line-height: 0.9;
+    color: black;
   }
 }
 @media print {
