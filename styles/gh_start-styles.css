@@ -55,6 +55,37 @@ section {
   margin-right: auto;
   text-align: center;
 }
+#opo-obs h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+#opo-obs h3:nth-child(1){
+  margin-top: 42px;
+}
+#opo-teaser-cont {
+  float: right;
+  width: min-content;
+  border: none; /* orig. 3px solid lightgray */
+  box-shadow: 0px 0px 10px darkgray;
+  margin-left: 12px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+#opo-teaser-cont figure {
+  margin: 0;
+  padding: 0;
+}
+#opo-teaser img {
+  margin-bottom: 8px;
+}
 .secondary-intro {
   margin-top: 40px;
 }
@@ -213,6 +244,15 @@ div.images figure:last-child {
   }
   #hero {
     max-width: 85%;
+  }
+  #opo-teaser-cont {
+    width: 40%;
+  }
+  #opo-teaser {
+    width: 100%;
+  }
+  #opo-teaser img {
+    width: 100%;
   }
   .secondary-intro {
     margin-top: 12px;
