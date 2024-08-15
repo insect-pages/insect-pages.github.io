@@ -123,7 +123,6 @@ img {
 .fig-holder figure {
   display: block;
   width: min-content;
-  /*border: 3px solid blue;*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
@@ -211,6 +210,55 @@ figcaption {
   color: #404040;
 }
 
+/* IMGDOC STYLES */
+.imgdoc {
+  display: block;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgdoc-description h1 {
+  font-size: 1.0rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: normal;
+}
+.imgdoc-misc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.imgdoc-date {
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.imgdoc-home {
+  font-size: 1.0rem;
+  text-align: center;
+}
+.imgdoc-misc hr {
+  height: 1px;
+  background-color: #a6a6a6;
+  border: none;
+  width: 7%;
+}
+.imgdoc-description { /*this and the h1 will be sensitive to neolaz.css*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+
+
 /* PRINT STYLES */
 
 @page {
@@ -223,12 +271,12 @@ figcaption {
   */
 }
 @media (max-width: 1200px) {
-  #mainbody {
+  #mainbody, .imgdoc {
     width: 92%;
   }
 }
-@media (max-width: 1080px) {
-  #mainbody {
+@media (max-width: 1080px) { /* Orig. 1080px -- return to this after dropbox test*/
+  #mainbody, .imgdoc {
     width: 90%;
   }
   #description {
@@ -288,11 +336,11 @@ figcaption {
     color: black;
   }  
 }
-@media (max-width: 750px) {
+@media (max-width: 750px) { /* Orig. 750px - return to this after dropbox test */
   html {
     font-size: 85%;
   }
-  #mainbody {
+  #mainbody, .imgdoc {
     width: 95%;
   }
   #description {
@@ -361,7 +409,7 @@ figcaption {
     margin-bottom: 25px;
   }
   img {
-    max-height: 80vh;
+    max-height: 440px;  /*Orig. 80vh -- change back after dropbox test */
     box-shadow: none;
   }
   figure {
