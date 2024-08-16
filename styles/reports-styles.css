@@ -275,7 +275,7 @@ figcaption {
     width: 92%;
   }
 }
-@media (max-width: 1080px) { /* Orig. 1080px -- return to this after dropbox test*/
+@media (max-width: 940px) { /* Orig. 1080px; note: affects iframes */
   #mainbody, .imgdoc {
     width: 90%;
   }
