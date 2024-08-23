@@ -1,0 +1,266 @@
+#thrypt-draft {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: goldenrod;
+  text-align: center;
+}
+#thrypt-report-mainbody {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+hr {
+  height: 2px;
+  background-color: darkgrey;
+  border: none;
+}
+hr.short {
+  width: 40%;
+}
+hr.long {
+  width: 100%;
+}
+h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#title-author {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+#title-author h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+#title-author sup {
+  font-size: 0.9rem;
+}
+#title-author h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+#title-author img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 8px lightgray;
+}
+#headmatter {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#headmatter h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+#thrypt-nav ul {
+  list-style-type: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#thrypt-nav li {
+  margin-bottom: 4px;
+}
+#overv p:last-of-type {
+  margin-bottom: 40px;
+}
+.tfig {
+  display: block;
+  width: min-content;
+}
+.tfig figcaption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+  width: 98%;
+}
+#tfig1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#tfig2 {
+  margin-left: 30px;
+  float: right;
+}
+.bottom-section-nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+.thr-fig-hldr {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+.thrypt-finding p:last-of-type {
+  margin-bottom: 40px;
+}
+.thrypt-finding figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+}
+.thrypt-finding figcaption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+}
+.fnum {
+  display: inline-block;
+  background-color: #d9d9d9; /* e6e6e6 */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 8px;
+  border-radius: 5px;
+  color: #333333; /* 404040 */
+}
+.thr-fig-nav {
+  position: absolute; /* direction: rtl; */
+  width: 120px;
+  top: 30px; right: -140px; /*top 55px */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.thr-fig-nav img {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 22px;
+  opacity: 0.24;
+}
+.zoom {
+  display: none;
+}
+#hosts h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#hosts h3 a {
+  text-decoration: none;
+  color: black;
+}
+#hosts h4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#hosts h5 {
+  display: inline;
+  font-size: 1.0rem;
+}
+#hosts p {
+  display: inline;
+  font-size: 1.0rem;
+}
+#hosts p.date {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#hosts p.date:first-of-type {
+  margin-top: 8px;
+}
+#hosts p.date:last-of-type {
+  margin-bottom: 50px;
+}
+#hosts ul {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+#hosts li {
+  margin-bottom: 15px;
+}
+#host-list {
+  display: block;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 82%;
+  padding: 40px;
+  border: 3px solid rgb(230 230 230);
+  border-radius: 10px;
+}
+#notes ol {
+  margin-bottom: 40px;
+}
+#notes li {
+  margin-bottom: 15px;
+}
+#refs p {
+  margin-left: 20px;
+  text-indent: -20px;
+}
+#thrypt-pagebottom-nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
