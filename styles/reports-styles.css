@@ -1,11 +1,8 @@
-/*
-main {
-  background-image: url(../images/TRIAL/banner-1660x217.jpg);
-  background-position: top 0px, left 0px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-*/
+/* STYLES FOR INSECT SPECIES REPORT PAGES */
+
+/*Adjust page width */
+#mainbody {width: 88%;}
+
 /*Styles for beta version*/
 nav {
   display: none;
@@ -20,39 +17,7 @@ nav {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
-  /*
-  padding-top: 200px; 
-  margin-left: 100px; 
-  margin-right: 100px;
-  */
   margin-bottom: 60px;
-}
-/*
-#return {
-  color: #595959;
-}
-#return a {
-  text-decoration: none;
-  color: #595959;
-}
-#return a:hover {
-  text-decoration: underline;
-  color: black;
-}
-*/
-#rec-title {
-  display: block;
-  border-bottom: 2px solid #a6a6a6;
-  margin-top: 20px;
-  padding-bottom: 5px;
-  margin-bottom: 0px;
-  /* margin-bottom: 30px; */
-  line-height: 1;
-  /*width: 62%;*/
-  font-size: 1.4em; /*Orig. 2em */
-  font-weight: bold;
-  color: black; /* Orig. black */
-  /*text-shadow: 1px 1px 2px black;*/
 }
 #rec {
   font-weight: 100;
@@ -60,12 +25,13 @@ nav {
 #data {
   margin-left: 25px;
   width: 85%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-top: 15px;
   font-size: 100%;
 }
 #data td, #data th {
-  padding-bottom: 3px;
+  padding-top: 0px;
+  padding-bottom: 0px; /* Orig. 3px */
 }
 #data th:nth-child(1) { 
   text-align: left;
@@ -132,7 +98,6 @@ figcaption {
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-  /*border: 2px solid green;*/
 }
 .id {
   display: inline-block;
@@ -149,7 +114,6 @@ figcaption {
   width: 100px;
   height: 100px;
   opacity: 0.22;
-  /*border: 3px solid orange;*/
 }
 .arrow {
   font-size: 300%;
@@ -249,7 +213,7 @@ figcaption {
   border: none;
   width: 7%;
 }
-.imgdoc-description { /*this and the h1 will be sensitive to neolaz.css*/
+.imgdoc-description { 
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -258,9 +222,7 @@ figcaption {
 }
 
 
-
 /* PRINT STYLES */
-
 @page {
   size: auto;
   margin: 5mm;
@@ -270,6 +232,8 @@ figcaption {
   Retrieved 01.11.24
   */
 }
+
+/* MEDIA QUERIES */
 @media (max-width: 1200px) {
   #mainbody, .imgdoc {
     width: 92%;

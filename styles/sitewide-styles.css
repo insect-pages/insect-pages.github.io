@@ -4,15 +4,30 @@ html {
 }
 body {
   background-color: white; /* for launched site: #a6a6a6 */
-  font-family: Arial, "Times New Roman", Arial, "Lucida Bright", Verdana;
+  font-family: Arial, "Times New Roman", "Lucida Bright", Verdana;
   font-size: 100%;
   line-height: 1.4;
   color: black;
   margin: 0;
   padding: 0;
 }
+#mainbody {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-top: 0px;
+}
+.secondary-heading, #allfinds-heading, 
+#genus-heading, #spp-heading { 
+  margin-top: 40px;
+}
 i {
   font-style: italic; 
+}
+b {
+  font-weight: bold;
 }
 .b {
   font-weight: bold;
@@ -21,79 +36,62 @@ a {
   color: darkblue;
   text-decoration: underline;
 }
-#mainbody {
+
+/*H1 TITLE LINE STYLES
+I've placed these styles here in case I want to standardize them someday.
+.report h1 (AKA #rec-title) is the h1 title on the reports pages.
+.secondary h1, .gen-pg h1 is for the "secondary" and genus pages. */
+
+.report h1 {
   display: block;
-  width: 88%;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  border-bottom: 2px solid #a6a6a6;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+}
+.secondary h1, .gen-pg h1, .spp-pg h1, .allfinds h1 {
+  position: relative;
+  margin-top: 17px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #a6a6a6;
+}
+.secondary h1, .gen-pg h1 {
   margin-bottom: 30px;
-  border-top: 0px;
+}
+#m { /*Penstemon flourish img*/
+  position: absolute;
+  bottom: 0px; right: -90px;
+  z-index: -1;
 }
 
-/*Navigation bar styling*/
-#nav {
-  display: flex;
-  width: 100%;
-  background-color: #404040;
-  font-size: 1.1rem;
+/*FOOTER STYLING
+.copy is for a <p> tag, .footer is for an enclosing <section> tag.
+The "copyright JvdL" (not incl. yr) text is directly included in the 
+.copy <p> tags in the HTML of basically all HTML files in gh_start.
+Year is added via a "content:" CSS property on the #copy-yr <span> tag. */
+#copy-yr::after {
+  content: ', 2023-2025';
 }
-#nav a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-}
-#nav a:hover {
-  background-color: black; /* #595959 */
-}
-#nav a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-/*Footer styling */
 .copy {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-.copy:nth-child(1) {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-}
-.copy:nth-child(2) {
-  margin-top: 0px;
-  padding-top: 0px;
-}
-.copy:nth-child(3) {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.copy:nth-child(4) {
-  margin-top: 0px;
-  padding-top: 0px;
 }
 .footer {
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
-#footer-copy {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
-  height: 100px;
-}
-#footertxt {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+
+/*MEDIA QUERIES*/
 @media print {
   body {
     background-color: white;
@@ -106,5 +104,4 @@ a {
     border: none;
     box-shadow: none;
   }
-
 }

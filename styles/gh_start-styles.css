@@ -1,61 +1,74 @@
-#homepage h2 {
-  font-size: 1.3rem;
-  display: block;
+/* =============== NOTE ===============
+This stylesheet is now deprecated and is only in use
+for test display of older pages. 
+=======================================  */
+
+
+/*Styles (=.rt) for first-draft genus pages (acer, abuti)
+CURRENTLY DEPRECATED as of 1/18/25*/
+.rt b {
+  font-weight: bold;
+  margin-right: 7px;
+}
+.rt a {
+  margin-left: 10px;
+}
+.rt ul:first-child {
+  list-style-type: none;
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
-#title h1 {
-  font-size: 1.4rem;
+.rt p {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+.rt p:last-child {
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+.rt h2 {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-weight: normal;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+/*Styles for first-draft 0XXX.html image pages
+CURRENTLY DEPRECATED as of 1/18/25*/
+div.images figure {
   display: block;
-  margin-top: 40px;
-  margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 50px;
+  width: min-content;
 }
-#title h2 {
-  font-size: 1.1rem; 
-}
-#hero {
+div.images img {
   display: block;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding: 4px;
-  border: 3px solid darkred;
 }
+div.images figcaption {
+  padding-top: 7px;
+}
+div.images figure:last-child {
+  margin-bottom: 70px;
+}
+
+/*Styles for "secondary" pages -- opo, addl, thrypt, etc.
+MOVED TO GEN-PG-STYLES.CSS 1/19/24 */
 section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 1050px;
 }
-.material {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.material h2 {
-  margin-bottom: 20px;
-}
-#notice h2 {
-  margin-top: 40px;
-}
-.sig {
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-#nav-links p {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-#opo-obs h3 {
+#secondary_opo h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -63,10 +76,12 @@ section {
   padding-bottom: 0px;
   text-align: center;
 }
-#opo-obs h3:nth-child(1){
+#secondary_opo h3:nth-child(1){
   margin-top: 42px;
 }
-#opo-teaser-cont {
+
+/*"Portraits..." little square image near top of opo.html*/
+#secondary-teaser-cont { 
   float: right;
   width: min-content;
   border: none; /* orig. 3px solid lightgray */
@@ -79,39 +94,42 @@ section {
   border-radius: 8px;
   font-size: 0.8rem;
 }
-#opo-teaser-cont figure {
+#secondary-teaser-cont figure {
   margin: 0;
   padding: 0;
 }
-#opo-teaser img {
+#secondary-teaser img {
   margin-bottom: 8px;
 }
-.secondary-intro {
+
+/*First <section> on "secondary" pages, with title 
+and intro paragraph; before <section> with links*/
+.secondary-intro { 
   margin-top: 40px;
 }
 .secondary-intro nav {
   margin-top: 0px;
 }
-.secondary-intro h1 {
-  position: relative;
-  margin-top: 17px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #a6a6a6;
-}
-.secondary-nav {
+
+/*Second <section> on "secondary" pages, with links
+Affects opo.html, addl.html, addl2.html...*/
+.secondary-menu {
   display: block;
   margin-top: 30px;
   margin-bottom: 50px;
 }
-.secondary-nav nav {
+.secondary-menu nav {
   display: flex;
   justify-content: center;
 }
-.secondary-nav ul {
+.secondary-menu ul {
   flex-grow: 0;
   list-style-type: none;
   padding-left: 0;
 }
+
+/*Third <section> on "secondary" pages, 
+with overview collage image*/
 .secondary-fig figure {
   display: block;
   margin-top: 25px;
@@ -135,48 +153,10 @@ section {
   margin-right: auto;
   width: 98%;
 }
-.rt b {
-  font-weight: bold;
-  margin-right: 7px;
-}
-.rt a {
-  margin-left: 10px;
-}
-.rt ul:first-child {
-  list-style-type: none;
-  margin-top: 0px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-  padding-left: 0px;
-}
-.rt ul:first-child li::before {
-  /* Unicode "Black Right-Pointing Triangle" U+25B6 */
-  /*
-  content: " \25B6";
-  position: relative;
-  left: 0px; top: -1px;
-  font-size: 0.7rem;
-  margin-left: 0px;
-  margin-right: 5px;
-  */
-}
-.rt p {
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 18px;
-}
-.rt p:last-child {
-  font-style: italic;
-  margin-top: 50px;
-  margin-bottom: 75px;
-}
-.rt h2 {
-  font-size: 1.2rem;
-  text-decoration: underline;
-  font-weight: normal;
-  margin-bottom: 12px;
-  margin-top: 28px;
-}
+
+/*Styles for top navigation menu and 
+penstemon flourish image on genus pages
+MOVED TO GEN-PG-STYLES.CSS 1/19/24 */
 nav.gn {
   width: 80%;
   background-color: white;
@@ -188,42 +168,18 @@ nav.gn a {
 nav.gn a:first-child {
   margin-left: 0px;
 }
-div.images figure {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3px;
-  margin-bottom: 50px;
-  width: min-content;
-}
-div.images img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.images figcaption {
-  padding-top: 7px;
-}
-div.images figure:last-child {
-  margin-bottom: 70px;
-}
-#m {
-  position: absolute;
-  bottom: 0px; right: -90px;
-  z-index: -1;
-}
-.m-s { /*For images alongside feeding mode labels on genus pages */
-  position: relative;
-  bottom: -6px; left: 0px;
-  height: 28px;
-  margin-left: 0px;
-  margin-right: 4px;
-  opacity: 0.6;
-}
+
+
+
 /*Media queries*/
+@media (min-width: 1280px) {
+  section {
+    width: 1050px;
+  }
+}
 @media (max-width: 1280px) {
   section {
-    width: 80%;
+    width: 80%; /*Orig. 80%   trial 1050px*/
   }
   .secondary-fig figure {
     width: 90%;
@@ -231,6 +187,9 @@ div.images figure:last-child {
   .secondary-fig img {
     width: 100%;
   }
+}
+@media (max-width: 1050px) {
+  
 }
 @media (max-width: 820px) {
   html {
@@ -245,13 +204,13 @@ div.images figure:last-child {
   #hero {
     max-width: 85%;
   }
-  #opo-teaser-cont {
+  #secondary-teaser-cont {
     width: 40%;
   }
-  #opo-teaser {
+  #secondary-teaser {
     width: 100%;
   }
-  #opo-teaser img {
+  #secondary-teaser img {
     width: 100%;
   }
   .secondary-intro {
