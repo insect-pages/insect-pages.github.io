@@ -50,7 +50,7 @@ nav {
   text-decoration: none;
   color: #737373;
   font-size: 0.9em;
-  pointer-events: none; /* beta */
+  /* pointer-events: none; */
 }
 #data a:hover {
   text-decoration: underline;

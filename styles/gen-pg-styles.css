@@ -1,0 +1,396 @@
+/* STYLES FOR GENUS PAGES */
+
+.genId {display: none;}
+main {margin-bottom: 120px;}
+.n {display: none;}
+
+/*Adjust page width */
+#mainbody {width: 1075px;}
+
+/* Section margins, dividers */
+.txtnfigs {
+  border-bottom: 2px dotted rgb(190, 190, 190);
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+#rflex, .txtnfigs:last-of-type, 
+#genus-species, #genus-references {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(160, 160, 160); /*2px 192x3 */
+}
+#genus-species ul, #genus-references ul {
+  margin: 0px;
+}
+
+/* Site navigation menu at top */
+nav.gn {
+  width: calc(100% - 254px);
+  background-color: white;
+}
+nav.gn a {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+nav.gn a:first-child {
+  margin-left: 0px;
+}
+
+/* Subheadings ("quick reference list," etc.) */
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+h2 a {
+  font-size: 1.0rem;
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+/*Flex container for list & thumbbox */
+#rflex { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+} 
+
+/* Quick reference list of records */
+#rlist table {
+  width: min-width;
+  margin-left: 0px;
+  margin-right: 12px;
+  font-size: auto; /*Orig. 12pt*/
+  border-collapse: collapse;
+}
+#rlist table td {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rlist table tr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+thead th {
+  font-weight: normal;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  text-align: left;
+  text-decoration: underline;
+}
+.r:nth-of-type(odd) {
+  background-color: rgb(238 238 244);
+}
+#rlist table tr th:nth-child(1) {
+  padding-left: 12px;
+  padding-right: 15px;
+}
+#rlist table tr td:nth-child(1) {
+  padding-left: 12px;
+  padding-right: 15px;
+}
+#rlist table tr th:nth-child(3) {
+  padding-left: 18px;
+  padding-right: 25px;
+}
+#rlist table tr td:nth-child(3) {
+  padding-left: 18px;
+  padding-right: 25px;
+}
+#rlist table tr td:nth-child(4) {
+  padding-right: 12px;
+}
+
+/*Thumbnail box on right side of record list */
+#rthumbs {
+  width: min-content;
+  padding-top: 40px;
+  margin-left: 10px;
+}
+#thumbWindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid lightgrey;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px lightgrey;
+  padding: 5px;
+  width: min-content;
+  height: auto;
+}
+#btns {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#rthumbs img {
+  width: 250px;
+  height: 250px;
+}
+#rthumbs button {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #909090;
+  line-height: 0.8;
+}
+#rthumbs button:hover {
+  cursor: pointer;
+}
+#prevButton {
+  padding-right: 10px;
+}
+#nextButton {
+  padding-left: 10px;
+}
+#genus-records h2 {
+  margin-bottom: 18px;
+}
+
+/*Text and figures in main body */
+.rl p:last-of-type {
+  display: inline;
+}
+.txtlinks {
+/* use float:right if desired, it works*/
+  display: inline-block;
+  margin-left: 10px;
+  break-inside: avoid;
+}
+.fig-1img, .fig-3img {
+  display: block;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-main-nc, .img-main-yc {
+  width: min-content;
+}
+.fig-1img .caption {
+  display: block;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fig-3img-flex-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+.img-side-yc {
+  width: min-content;
+}
+.img-main-nc, .img-side-yc { /*See note #2 at bottom */
+  position: relative;
+  line-height: 0;
+}
+.fig-3img .img-side-yc {
+  margin-top: 4px;
+  margin-right: 4px;
+}
+.fig-3img .caption {
+  margin-top: 4px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 120px;
+  flex-grow: 1;
+}
+.caption p {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 3px;
+  padding-bottom: 0px;
+}
+.caption ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.caption li {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 5px;
+}
+.fig-1img .caption p {
+  display: inline;
+}
+.fig-1img .figlinks {
+  margin-left: 10px;
+}
+
+/*  Styles for figure labels (A,B,C,etc.); another text outline 
+    option is -webkit-text-stroke; see note #3 at bottom   */
+.fignum {
+  position: absolute;
+  line-height: normal;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bshad {text-shadow: 0px 0px 5px black;}
+.wshad {text-shadow: 0px 0px 5px white;}
+.gshad {text-shadow: 0px 0px 5px rgb(80, 80, 80);}
+.nshad {text-shadow: none;}
+.bot-l {left: 10px; bottom: 6px;}
+.bot-r {right: 20px; bottom: 6px;}
+.top-l {left: 10px; top: 10px;}
+.top-r {right: 20px; top: 10px;}
+.white {color: white;}
+.black{color: black;}
+.gray{color: rgb(80, 80, 80);}
+
+/* References */
+#genus-references ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#genus-references li {
+  padding-left: 0px;
+  margin-left: 20px;
+  text-indent: -20px;
+  margin-bottom: 15px;
+}
+#genus-references li:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* Explainer document styles */
+
+
+/* ================ MEDIA QUERIES ================== */
+@media (max-width: 1275px) {
+  #m {
+    right: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  #mainbody {
+    width: 98%;
+  }
+  .fig-3img, .fig-1img {
+    max-width: 90vw;
+  }
+  .img-main-nc, .img-main-yc {
+    display: block;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-main-nc img {
+    max-width: 90vw;
+  }
+  .img-main-yc img {
+    display: block;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+}
+@media (max-width: 940px) {
+  .fig-3img-flex-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fig-3img .caption {
+    width: 350px;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 90%;
+  }
+  #m {
+    display: none;
+  }
+  nav.gn {
+    width: 100%;
+  }
+  #rflex {
+    flex-direction: column;
+    align-items: center;
+  }
+  #rlist table {
+    font-size: 0.9rem;
+  }
+  .fignum {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 450px) {
+  .img-side-yc img {
+    max-width: 85vw; 
+    /* Orig. width: 100%, that's it */
+  }
+  .img-side-yc {
+    max-width: 85vw; 
+    /* Orig. min-width: 65%, that's it */
+  }
+  .fig-3img .caption {
+    width: 75%;
+  }
+}
+/*NOTES*/
+
+/* 1. For flex layout editing: #rflex {border: 1px solid red;} 
+#rlist {border: 1px solid blue;} #rthumbs {border: 1px solid green;} */
+
+/* 2. This is needed, else a gap appears
+between bottom of img and bottom of div*/
+
+/* 3. WEBKIT TEXT STROKE
+The -webkit-text-stroke property is usable for
+drawing an outline around text for the figure
+numbers, but Brackets doesn't recognize it and
+I also found a website saying it's not supported
+by "legacy browsers."  On the other hand, MDN
+calls it "baseline - widely supported."
+
+/* 4. Miscellaneous deprecated styles used 
+on test pages (saving for now)
+#gen-pg-recs {
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 1rem;
+  margin-left: 15px;
+  padding-left: 0px;
+}
+#gen-pg-recs li {
+  white-space: pre-wrap;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#recs {
+  font-family: monospace;
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+#recs a {
+  page-break-before: always;
+}
+#recs img {
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  vertical-align: middle;
+}
+@media (max-width: 500px) {
+  #gen-pg-recs li {
+    margin-bottom: 20px;
+  }
+}
+End misc. deprecated styles */

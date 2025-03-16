@@ -1,0 +1,90 @@
+main {
+  display: block;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 1.2rem;
+}
+pre {
+  font-family: monospace;
+}
+#qrt-img {
+  margin-left: 18px;
+}
+#table-cols-expl li {
+  margin-bottom: 10px;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+th {
+  font-weight: normal;
+  text-align: left;
+  text-decoration: underline;
+}
+th, td {
+  padding-bottom: 2px;
+}
+tr > th:nth-of-type(1) {
+  padding-right: 30px;
+}
+#rec-firstline-img {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.lifestage-abbr {
+  list-style-type: none;
+}
+.footer {
+  margin-bottom: 450px;
+}
+
+@media (max-width: 1000px) {
+  #m {
+    display: none;
+  }
+  main {
+    width: 95%;
+  }
+}
+@media (max-width: 850px) {
+  #rec-firstline-img {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #qrt-img {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+/* Styles for record first-line diagram
+in actual text (<pre>) -- SAVE PLEASE */
+/*
+#rec-expl {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 900px;
+  background-color: rgb(245, 245, 245);
+}
+#rec-eg {
+  color: black;
+}
+.lbls {
+  color: darkblue;
+}*/

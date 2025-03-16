@@ -20,7 +20,7 @@ body {
   border-top: 0px;
 }
 .secondary-heading, #allfinds-heading, 
-#genus-heading, #spp-heading { 
+#genus-heading, #spp-heading, #expl-heading { 
   margin-top: 40px;
 }
 i {
@@ -44,7 +44,7 @@ I've placed these styles here in case I want to standardize them someday.
 
 .report h1 {
   display: block;
-  border-bottom: 2px solid #a6a6a6;
+  border-bottom: 2px solid rgb(165, 165, 165);
   margin-top: 20px;
   padding-bottom: 5px;
   margin-bottom: 0px;
@@ -53,13 +53,13 @@ I've placed these styles here in case I want to standardize them someday.
   font-weight: bold;
   color: black;
 }
-.secondary h1, .gen-pg h1, .spp-pg h1, .allfinds h1 {
+.secondary h1, .gen-pg h1, .spp-pg h1, .expl h1, .allfinds h1 {
   position: relative;
   margin-top: 17px;
   font-size: 1.5rem;
-  border-bottom: 2px solid #a6a6a6;
+  border-bottom: 2px solid rgb(165, 165, 165);
 }
-.secondary h1, .gen-pg h1 {
+.secondary h1, .gen-pg h1, .expl h1 {
   margin-bottom: 30px;
 }
 #m { /*Penstemon flourish img*/
