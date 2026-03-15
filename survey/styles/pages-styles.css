@@ -1,0 +1,93 @@
+/* Basic styles */
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+/* Section formatting */
+section {
+  width: 90%;
+  display: block;
+  margin: 0px auto 40px auto;
+}
+section:last-of-type {
+  margin-bottom: 65px;
+}
+section:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px dotted rgb(165, 165, 165);
+}
+#results-page section:not(:last-of-type) {
+  padding-bottom: 15px;
+}
+.h2-cont h2 {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.h2-cont {
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+.lnktop {
+  font-size: 0.9rem;
+  margin-left: 13px;
+}
+
+/* Figures */
+figure {
+  margin: 8px;
+  width: min-content;
+  border: 3px solid lightgray;
+  margin-left: 12px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 8px;
+}
+#order-abundance img {
+  width: 300px;
+  opacity: 0.8;
+}
+.right {
+  float: right;
+}
+figcaption {
+  font-size: 0.9rem;
+}
+
+/* References */
+#page-references ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#page-references li {
+  padding-left: 0px;
+  margin-left: 20px;
+  text-indent: -20px;
+  margin-bottom: 15px;
+  overflow-wrap: anywhere;
+}
+#page-references li:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* Page metadata */
+#page-metadata p {
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}

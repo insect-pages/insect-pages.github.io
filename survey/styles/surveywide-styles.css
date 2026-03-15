@@ -1,0 +1,388 @@
+/*Basic body styles*/
+html, body {
+  font-family: Helvetica, Arial, "Times New Roman", "Lucida Bright", Verdana, sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.4;
+  color: rgb(50, 50, 50);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(210, 210, 210); /*lightgray*/
+  /*background-image: url("../images/bg.jpg");
+  background-repeat: repeat;*/
+}
+a {
+  color: darkblue;
+  text-decoration: underline;
+}
+.skip-link {
+  position: absolute;
+  top: -3em;
+  background: white;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Hide certain things in Favorites page */
+#record9007 .img-n {display: none;}
+#record9007 .gn {display: none;}
+#record9007 #intra-nav {display: none;}
+#record9007 #record-details {border-bottom: none; margin-bottom: 5px; padding-bottom: 5px;}
+#record9007 #record-details .h2-cont {display: none;}
+#record9007 #record-gallery .h2-cont {display: none;}
+#record9007 #record-details table {display: none;}
+
+/* Temporary, for genus page test (agera)
+Need to switch this to #column */
+#mainbody {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-top: 0px;
+}
+
+/* Primary structural column */
+#column {
+  display: block;
+  width: 90%;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-left: 5px solid darkgray; /*5px solid darkgray*/
+  border-right: 5px solid darkgray; /*5px solid darkgray; rgb(120, 80, 20) rgb(180, 120, 70)*/
+  border-bottom: 5px solid darkgray; /*5px solid darkgray*/
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  box-shadow: 0px 0px 20px darkgray; /* 0px 0px 20px darkgray; rgb(240, 190, 120) rgb(150, 120, 95)*/
+}
+
+/* Banner */
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-image: url("../images/sizes/reg/banner-pap-1220px.jpg"), url("../images/sizes/reg/banner-filler-343px.jpg");
+  background-position: top 0px right 0px, top 0px right 1220px;
+  background-repeat: no-repeat, repeat-x;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(90, 40, 10); /* rgb(130, 90, 40) rgb(55, 0, 0); */
+  margin: 0px;
+}
+header div {
+  padding-left: 14px;
+}
+
+/* Navigation bar */
+nav.top, #navbar {
+  display: block;
+  width: 100%;
+  background-color: rgb(98, 30, 0); /* rgb(100, 40, 0); rgb(25, 25, 25) rgb(130, 90, 40); */
+} 
+nav.top {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.0rem;
+}
+#navbar {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+#navbar li {
+  float: left;
+}
+#navbar a {
+  display: block;
+  color: rgb(240, 240, 240); /* white */
+  text-align: center;
+  padding: 9px 16px; /* Orig. "9px 16px" */
+  text-decoration: none;
+}
+#navbar a:hover {
+  /* background-color: rgb(60, 10, 0); /* rgb(10, 100, 10);*/
+  /*text-shadow: 0px 2px 2px black;*/
+  text-decoration: underline;
+}
+
+.secondary-heading, #allfinds-heading, 
+#spp-heading, #species-heading, #expl-heading { 
+  margin-top: 40px;
+}
+#species-heading {
+  margin-bottom: 30px;
+}
+#genus-heading {
+  margin-top: 0px;
+}
+i {
+  font-style: italic; 
+}
+b {
+  font-weight: bold;
+}
+.b {
+  font-weight: bold;
+}
+a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+/*H1 TITLE LINE STYLES
+I've placed these styles here in case I want to standardize them someday.
+.report h1 (AKA #rec-title) is the h1 title on the reports pages.
+.secondary h1, .gen-pg h1 is for the "secondary" and genus pages. */
+
+.report h1 {
+  display: block;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  margin-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+}
+.secondary h1, .spp-pg h1, .expl h1, .allfinds h1 {
+  position: relative;
+  margin-top: 17px;
+}
+.secondary h1, .gen-pg h1, .spp-pg h1, .expl h1, .allfinds h1, .page h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  border-bottom: 2px solid rgb(165, 165, 165); /*2px solid rgb(165, 165, 165)*/
+}
+.secondary h1, .expl h1 {
+  margin-bottom: 30px;
+}
+.page h1 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+#m { /*Penstemon flourish img*/
+  position: absolute;
+  bottom: 0px; right: -60px;
+  /*z-index: -1;*/
+}
+
+/*Intra-page navigation (species & genus pgs.)*/
+#intra-nav nav {
+  display: flex;
+}
+#intra-nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+#intra-nav li {
+  padding: 0px;
+  margin: 0px;
+}
+.circ {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 0.7rem;
+}
+
+/* "Bonus" images ("sideimg")
+Orig. for gen. pgs.
+Hoping to add these to spp. pgs. too */
+.sideimg-right {
+  width: min-content;
+  border: 2px solid rgb(230, 230, 230);
+  margin-left: 16px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 8px;
+}
+.sideimg-left {
+  width: min-content;
+  border: 2px solid rgb(230, 230, 230);
+  margin-left: 0px;
+  margin-right: 16px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding: 3px;
+  border-radius: 8px;
+}
+.sideimg-right {
+  float: right;
+}
+.sideimg-left {
+  float: left;
+}
+.sideimg-right img, .sideimg-left img {
+  margin-bottom: 4px;
+}
+
+/* References */
+.references ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.references li {
+  padding-left: 0px;
+  margin-left: 20px;
+  text-indent: -20px;
+  margin-bottom: 15px;
+}
+.references li:last-of-type {
+  margin-bottom: 0px;
+}
+.ref-origin {
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}
+span.cite {
+  display: none;
+}
+.citebacks {
+  margin-left: 12px;
+  font-size: 0.9rem;
+}
+.citebacks a {
+  margin-right: 5px;
+}
+.citebacks a:last-of-type {
+  margin-right: 0px;
+}
+.citebacks a:not(:last-of-type)::after {
+  content: ',';
+}
+
+/* FOOTER STYLING */
+#copy-yr::after {
+  content: ', 2023-2026';
+}
+.copy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+  header {
+    background-image: url("../images/sizes/reg/banner-filler-343px.jpg");
+    background-position: top 0px right 0px;
+    background-repeat: repeat-x;
+  }
+}
+@media (max-width: 850px) {
+  #intra-nav nav {
+    flex-direction: column;
+  }
+  #intra-nav ul {
+    list-style-type: none;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+  #intra-nav li {
+    padding: 0px;
+    margin: 0px;
+  }
+  .circ {
+    display: none;
+  }
+  .sideimg-right img {
+    max-width: 35vw;
+  }
+  .sideimg-left img {
+    max-width: 35vw;
+  }
+  .sideimg-right, .sideimg-left {
+    max-width: 40vw;
+  }
+}
+@media (min-width: 1920px) {
+  header {
+    height: 80px;
+    background-image: url("../images/sizes/1920px/banner-pap-1626px.jpg"), url("../images/sizes/1920px/banner-filler-458px.jpg");
+    background-position: top 0px right 0px, top 0px right 1626px;
+  }
+}
+@media (min-width: 2560px) {
+  header {
+    height: 106px;
+    background-image: url("../images/sizes/2560px/banner-pap-2156px.jpg"), url("../images/sizes/2560px/banner-filler-606px.jpg");
+    background-position: top 0px right 0px, top 0px right 2156px;
+  }
+}
+@media (max-width: 350px) {
+  /* Fonts */
+  html, body {font-size: 8pt;}
+  header {font-size: 0.8rem;}
+  nav.top, nav.gn, #intra-nav {font-size: 0.7rem;}
+  .gen-pg h1, .spp-pg h1 {font-size: 0.8rem;}
+  .citebacks {font-size: 0.8rem;}
+  
+  nav.gn {margin-top: 5px; padding-top: 5px;}
+  
+  #navbar a {height: auto; padding: 3px;}
+  header div {
+    padding-left: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  header {
+    background-image: none;
+    background-color: rgb(190, 200, 70);
+    height: auto;
+  }
+  .spp-pg h1, .gen-pg h1 {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+  #intra-nav nav, #intra-nav ul {
+    flex-direction: column;
+  }
+  .sideimg-right img {
+    max-width: 60vw;
+  }
+  .sideimg-left img {
+    max-width: 60vw;
+  }
+  .sideimg-right, .sideimg-left {
+    max-width: 70vw;
+    padding: 2px;
+    float: none;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .references li {
+    margin-left: 5px;
+    text-indent: -5px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 125px) {
+  html, body {font-size: 7pt;}
+  .citebacks {font-size: 0.8rem;}
+}

@@ -1,0 +1,87 @@
+#genera-list {
+  border: 1px solid rgb(100, 100, 100);
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "Arial";
+}
+#genera-list tr:nth-child(odd) td {
+  background-color: rgb(250, 245, 230);
+}
+#genera-list tr:nth-child(even) td {
+  background-color: rgb(245, 240, 200);
+}
+#genera-list tr:first-of-type th {
+  background-color: rgb(220, 220, 250);
+}
+#genera-list td, #genera-list th {
+  border: 1px solid rgb(170, 170, 170);
+}
+#genera-list h3 {
+  margin: 0px; padding: 0px; line-height: 1.0;
+}
+#genera-list td {
+  padding: 4px 7px 4px 7px;
+}
+#genera-list tr:not(:first-of-type) th {
+  background-color: rgb(240, 225, 190);
+  padding: 0px 5px 0px 5px;
+}
+#ltr-list {
+  list-style-type: none;
+  margin: 0px; padding: 0px;
+}
+#ltr-list li {
+  display: inline;
+  font-size: 1.1rem;
+}
+#genera-list td ul {
+  list-style-type: none;
+  margin: 0px; padding: 0px;
+}
+#genera-list td ul li {
+  display: inline;
+}
+#genera-list td ul li:not(:first-of-type)::before {
+  content: " ● ";
+  color: rgb(100, 100, 100);
+  font-size: 0.8rem;
+}
+#findings-table-holder {
+  position: relative;
+}
+#toplink {
+  position: sticky;
+  float: right;
+  top: 0px; right: 0px;
+}
+#findings-table {
+  border: 1px solid rgb(100, 100, 100);
+  border-collapse: collapse;
+  width: 95%;
+  font-size: 0.8rem;
+  font-family: "Arial";
+}
+#findings-table tbody tr:nth-child(odd) {
+  background-color: rgb(240, 240, 255);
+}
+#findings-table td {
+  padding: 5px;
+  border: 1px solid rgb(170, 170, 170);
+}
+#findings-table thead th {border: 1px solid rgb(170, 170, 170); overflow: hidden; background-color: rgb(200, 250, 160); /*position: sticky; top: 0;*/}
+
+#findings-table tbody th {width: 5%; border: 1px solid rgb(170, 170, 170); background-color: rgb(200, 250, 160);} /*rgb(180, 250, 180)*/
+#findings-table td:nth-of-type(1) {width: 10%; word-break: break-all;}
+#findings-table td:nth-of-type(2) {width: 13%; word-break: break-all;}
+#findings-table td:nth-of-type(3) {width: 15%; border-left: 2px solid rgb(170, 170, 170);}
+#findings-table td:nth-of-type(4) {width: 45%;}
+#findings-table td:nth-of-type(5) {width: 7%;}
+#findings-table td:nth-of-type(6) {width: 5%; word-break: break-all;}
+
+#findings-table .gp1 td:nth-of-type(1) {background-color: rgb(240, 245, 220);}
+#findings-table .gp1 td:nth-of-type(2) {background-color: rgb(240, 245, 220);}
+#findings-table .gp2 td:nth-of-type(1) {background-color: rgb(210, 220, 180);}
+#findings-table .gp2 td:nth-of-type(2) {background-color: rgb(210, 220, 180);}
+
+#findings-table .gp-first td, #findings-table .gp-first th {border-top: 2px solid rgb(100, 100, 100);}

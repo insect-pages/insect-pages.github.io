@@ -1,0 +1,430 @@
+/* SPECIES PAGE STYLES */
+
+/* A few initial styles */
+.n {display: none;}
+blockquote {
+  margin: 10px 40px 10px 40px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Penstemon flourish */
+.spp-pg h1 {position: relative;}
+#m {
+  display: none;
+  position: absolute;
+  bottom: 0px; right: 10px;
+  z-index: 1;
+}
+
+/* Main section */
+main {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 65px;
+}
+
+/* Top nav in main section */
+nav.gn a {margin: 0;}
+nav.gn {width: auto;} /* calc(100% - 600px) */
+.rarr {
+  margin-left: 7px;
+  margin-right: 7px;
+  color: rgb(180, 180, 180);
+  font-size: 0.8rem;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 0px;
+}
+h2 {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.h2-cont {
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+.h2-links {
+  margin-left: 13px;
+}
+.h2-links .lnkq {
+  display: none;
+  margin-left: 8px;
+}
+.h2-links .lnktop {
+  font-size: 0.9rem;
+}
+
+/* Section borders and margins */
+section:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px dotted rgb(165, 165, 165);
+}
+
+/* Summary table */
+#record-details table {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#record-details th, td {
+  padding: 0px;
+}
+#record-details th {
+  text-align: right;
+  padding-right: 10px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+/* Record text and small decorative image */
+#record-text p:last-of-type {
+  margin-bottom: 0px;
+}
+#for-top-cont {
+  float: right;
+  width: min-content;
+  border: 3px solid lightgray;
+  margin-left: 12px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 8px;
+}
+#for-top-cont figure {
+  margin: 0;
+  padding: 0;
+}
+#for-top img {
+  margin-bottom: 8px;
+}
+.specimen-data {
+  display: block;
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+  font-style: italic;
+  margin-top: 28px;
+}
+
+/* All images */
+.img-n {
+  display: inline-block;
+  line-height: 1.0;
+  font-size: 0.8rem;
+  color: rgb(60, 60, 60);
+  background-color: rgb(232, 232, 232);
+  border-radius: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: 8px;
+}
+
+/* Main images; sizes, see below*/
+#record-images figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  margin-bottom: 35px;
+}
+.featured-fig-cont {
+  position: relative;
+}
+.prev-next {
+  position: absolute;
+  top: 20px; right: -50px;
+}
+.prev-next-inner {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  /*width: 60px;
+  height: 60px;*/
+}
+.prev-next-inner div {
+  margin-bottom: 10px;
+  /*border: 1px solid rgb(200, 200, 200);
+  border-radius: 4px;*/
+}
+.prev-next-inner img {
+  width: 10px;
+  opacity: 0.35;
+}
+.prev img {margin-right: 4px;}
+.next img {margin-left: 4px;}
+.show-pn-y, .show-pn-y-override {display: block;}
+.show-pn-n, .show-pn-n-override {display: none;}
+
+.prev-next a {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+  padding: 10px;
+}
+.prev-next a:visited {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+}
+
+/* Additional images (gallery) */
+#gallery {
+  margin-top: 5px;
+  display: grid;
+  grid-template-rows: auto;
+  /*grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
+  column-gap: 12px;
+  justify-items: center;
+}
+.gallery-fig-cont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /*width: 350px;*/
+}
+#gallery figure {
+  width: min-content;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8px;
+  padding: 0;
+}
+.gallery-img-cont {
+  display: flex;
+  width: min-content;
+  /*height: 300px;*/
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+.gallery-img-cont a {
+  display: block;
+  width: min-content;
+  height: min-content;
+  padding: 0;
+  margin: 0;
+}
+#gallery img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  /*max-width: 350px;
+  max-height: 300px;*/
+}
+#gallery figcaption {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* References */
+#record-references ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#record-references li {
+  padding-left: 0px;
+  margin-left: 20px;
+  text-indent: -20px;
+  margin-bottom: 15px;
+}
+#record-references li:last-of-type {
+  margin-bottom: 0px;
+}
+.citeback {
+  font-size: 0.9rem;
+  margin-left: 12px;
+}
+
+/* Page metadata */
+#record-metadata {
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Main image sizes */
+.i1125 img {max-width: 1125px;}
+.i1050 img {max-width: 1050px;}
+.i900 img {max-width: 900px;}
+.i700 img {max-width: 700px;}
+
+/* Gallery image sizes */
+.i350 {grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}
+.i350 .gallery-fig-cont {width: 350px;}
+.i350 .gallery-img-cont {height: 300px;}
+.i350 img {max-width: 350px; max-height: 300px;}
+.i275 {grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));}
+.i275 .gallery-fig-cont {width: 275px;}
+.i275 .gallery-img-cont {height: 240px;}
+.i275 img {max-width: 275px; max-height: 240px;}
+
+/* MEDIA QUERIES */
+
+/* For main image sizes */
+@media (max-width: 1400px) {.i1125 img {max-width: 75vw;}}
+@media (max-width: 1400px) {.i1050 img {max-width: 75vw;}}
+@media (max-width: 1200px) {.i900 img {max-width: 75vw;}}
+@media (max-width: 933px) {.i700 img {max-width: 75vw;}}
+
+/* For gallery image sizes (move & rename from below + add more) */
+
+/* Additional media queries*/
+@media (max-width: 1400px) {
+  #gallery .gallery-fig-cont {
+    width: min-content;
+  }
+  #gallery figure {
+    width: min-content;
+  }
+}
+@media (max-width: 1275px) {
+  #m {right: 0px;}
+}
+@media (max-width: 1100px) {
+  #column {
+    width: 100%;
+    border-right: 0px;
+    border-left: 0px;
+  }
+  main {margin-left: 10px; margin-right: 10px;}
+  #species-heading {
+    margin-top: 8px;
+  }
+  #m {
+    display: none;
+  }
+  nav.gn {
+    width: 100%;
+  }
+  #for-top img {
+    max-width: 33vw;
+  }
+  .featured-fig-cont {
+    padding-top: 35px;
+  }
+  .prev-next {
+    position: absolute;
+    top: 20px; right: 20px;
+  }
+  .prev-next-inner {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+  body {
+    overflow-wrap: break-word;
+  }
+  .lnktop, .lnkall, .lnkq {
+    font-size: 0.9rem;
+  }
+  main {
+    margin-bottom: 30px;
+  }
+  #species-heading {
+    margin-top: 8px;
+  }
+  #record-details table {
+    margin-left: 3px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 750px) {
+  #gallery .gallery-img-cont {
+    height: auto;
+  }
+}
+@media (max-width: 425px) {
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+  #gallery .gallery-img-cont {
+    max-width: 75vw;
+  }
+  #gallery img {
+    max-width: 75vw;
+  }
+  #record-details table {
+    font-size: 0.8rem;
+  }
+  #record-details th {
+    padding-right: 3px;
+    white-space: normal;
+    vertical-align: top;
+  }
+}
+@media (max-width: 350px) {
+/* Tempted to move all this to surveywide-styles? See [1] */
+  /* Fonts */
+  html, body {font-size: 9pt;}
+  .lnktop, .lnkall, .lnkq {font-size: 0.5rem;}
+  h2 .lnktop {font-size: 0.5rem;}
+  .h2-links .lnktop, .h2-links .lnkq {font-size: 0.5rem;}
+  h2 a {font-size: 0.5rem;}
+  .spp-pg h1 {font-size: 0.8rem;}
+  .spp-pg h2 {font-size: 0.6rem;}
+  #intra-nav {font-size: 0.6rem;}
+  .rarr {font-size: 0.4rem;}
+  #record-details, #record-images, #record-gallery, #record-references, #record-specdata, #record-metadata {font-size: 0.5rem;}
+  .img-n {font-size: 0.5rem; padding: 2px;}
+  .prev-next-inner {font-size: 0.5rem;}
+  #gallery figcaption {font-size: 0.5rem;}
+  .citeback {font-size: 0.5rem;}
+  footer {font-size: 0.5rem;}
+  #record-details table {font-size: 0.5rem;}
+  
+  main {margin-left: 2px; margin-right: 2px;}
+  #species-heading {
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  .featured-fig-cont {padding-top: 5px;}
+  .prev-next-inner a {padding: 3px;} /* Font setting above */
+  .prev-next img {width: 5px;}
+  .prev-next {
+    position: absolute;
+    top: 0px; right: 0px;
+  }
+  #for-top img {width: 150px;}
+  #for-top-cont {border-width: 1px; padding: 3px; margin: 3px; border-radius: 2px;}
+  
+  .rarr {margin-left: 3px; margin-right: 3px;}
+  .spp-pg h1 {margin-top: 8px; margin-bottom: 5px;}
+  .h2-cont {margin-top: 7px; margin-bottom: 3px;}
+  #intra-nav {margin-top: 5px; margin-bottom: 5px;}
+  footer {margin-top: 8px; margin-bottom: 8px;}
+  #record-details, #record-images, #record-gallery {
+    margin-top: 5px; margin-bottom: 8px;
+    padding-bottom: 10px; padding-top: 0px;}
+  #record-images figure {margin-top: 12px; margin-bottom: 12px;}
+}
+@media (max-width: 125px) {
+  .lnktop, .lnkall, .lnkq {font-size: 0.8rem;}
+  h2 a {font-size: 0.8rem;}
+}
+
+/* NOTES
+1. I didn't have much luck trying to do this all from surveywide-styles.  Part of the problem is that, in the genus and species pages, both in the main CSS body and in the larger media queries, I use a lot of very specific # and . selectors for setting font sizes and such -- selectors that are more specific than any I would put in the surveywide-styles, so they end up overruling what is in surveywide-styles.  It may also be because I include surveywide-styles first in the <link> list.
+*/

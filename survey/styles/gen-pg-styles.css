@@ -1,0 +1,909 @@
+/* STYLES FOR GENUS PAGES */
+
+main {margin-bottom: 120px;}
+.n {display: none;}
+p:has(.longquote) {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.longquote span:first-of-type  {
+  font-style: italic;
+}
+.longquote span:first-of-type i {
+  font-style: normal;
+}
+.longquote span:last-of-type {
+  font-style: normal;
+}
+
+/*Temporary*/
+.gen-pg h1 {position: relative;}
+#m {display: none; z-index: 1;}
+header, nav.top {position: relative; z-index: 2;}
+#genus-heading { /* See also @media 1100px */
+  padding-top: 40px;
+  margin-bottom: 30px;
+  /*background-image: linear-gradient(to left, rgb(20 20 20 / 40%), rgb(255 255 255 / 0%) 6%), url(../images/fly6-mod-100h-brighter.png);*/
+  /*background-image: linear-gradient(to right, rgb(20 20 20 / 40%), rgb(255 255 255 / 0%)), url(../images/fly6-mod-100h-brighter.png);*/
+  /*background-image: url(../images/fly6-mod-100h-brighter.png);
+  background-position: bottom 0px right 0px;
+  background-repeat: no-repeat;*/
+}
+h1 {
+  margin-bottom: 0px;
+}
+main {margin-left: 60px; margin-right: 60px;}
+
+/*Adjust page width */
+#mainbody {width: 1075px; margin-bottom: 600px;}
+
+/* Section margins, dividers */
+.txtnfigs {
+  border-bottom: 2px dotted rgb(190, 190, 190); /* 2px dotted rgb(210, 210, 210); */
+  padding-bottom: 40px;
+  margin-bottom: 8px;
+}
+#rflex, 
+.txtnfigs:last-of-type, 
+#genus-species,
+#genus-gallery,
+#genus-references,
+#genus-summary {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgb(165, 165, 165); /*1px solid rgb(160, 160, 160); 2px 192x3 */
+}
+#genus-summary {
+  padding-bottom: 16px;
+} 
+#genus-species ul {
+  margin: 0px;
+}
+#genus-references ul {
+  margin-top: 20px;
+}
+
+/* Site navigation menu at top */
+nav.gn {
+  width: calc(100% - 600px);
+  /*background-color: white;*/
+}
+nav.gn a {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+nav.gn a:first-child {
+  margin-left: 0px;
+}
+
+/* [?], "Top", "View all images" links */
+.lnkall, .lnkq {
+  font-size: 0.9rem;
+}
+.rectxt .lnktop, figure .lnktop, h2 .lnktop {
+  font-size: 0.9rem;
+}
+.recline1-links {
+  font-size: 0.9rem;
+}
+
+/* Subheadings ("quick reference list," etc.) */
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+h2 a {
+  font-size: 1.0rem;
+  font-weight: normal;
+}
+h2 a:nth-of-type(2) {
+  margin-left: 8px;
+}
+
+/*Intra-page navigation
+See surveywide-styles.css */
+
+/*Flex container for list & thumbbox */
+#rflex { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+} 
+
+/* Quick reference list of records */
+#rec-total {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  padding: 0px;
+}
+#rec-total span {
+  margin-right: 5px;
+  font-size: 0.7rem;
+}
+
+#rlist table {
+  width: min-width;
+  margin-left: 0px;
+  margin-right: 12px;
+  font-size: 1rem;
+  border-collapse: collapse;
+}
+#rlist table td {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rlist table tr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+thead th {
+  font-weight: normal;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  text-align: left;
+  text-decoration: underline;
+}
+.r:nth-of-type(odd) {
+  background-color: rgb(238 238 244);
+}
+#rlist table tr th:nth-child(1) {
+  padding-left: 8px;
+  padding-right: 12px;
+}
+#rlist table tr td:nth-child(1) {
+  padding-left: 8px;
+  padding-right: 12px;
+}
+#rlist table tr th:nth-child(3) {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#rlist table tr td:nth-child(3) {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#rlist table tr td:nth-child(4) {
+  padding-right: 12px;
+}
+
+/*Thumbnail box on right side of record list */
+#rthumbs {
+  width: min-content;
+  padding-top: 50px;
+  margin-left: 40px;
+}
+#thumb-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  /*flex-direction: column;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px lightgrey;*/
+  padding: 5px;
+  width: min-content;
+  height: auto;
+}
+#thumb-and-desc {
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 8px;
+  padding: 6px;
+}
+#btns {
+  border: none;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 15px;
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;*/
+}
+#rthumbs img {
+  width: auto; /*215px for both*/
+  height: auto;
+}
+#rthumbs button {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: rgb(180, 180, 180);
+  margin: 6px;
+  /*color: #909090;*/
+  line-height: 0.8;
+}
+#rthumbs button:hover {
+  cursor: pointer;
+}
+#prev-button {
+  padding-right: 10px;
+}
+#next-button {
+  padding-left: 10px;
+}
+#thumb-desc {
+  min-height: 45px;
+}
+
+/* Hostplant species code links and hints */
+#genus-species ul { /* See Note #5 */
+  padding-left: 0px;
+}
+#genus-species li {
+  margin-left: 30px;
+}
+.host-abbr-explainer-link-cont {
+  font-size: 0.9rem;
+}
+.spplink {
+  color: black;
+  line-height: 0.9;
+  border-bottom: 2px dotted rgb(170, 170, 170);
+}
+.spplink-cont {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.spplink-cont .spp-hint {
+  visibility: hidden;
+  width: 150px;
+  background-color: white;
+  text-decoration: none;
+  color: #666666;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  box-shadow: 3px 3px 6px lightgray;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -85px;
+}
+.spplink-cont:hover .spp-hint {
+  visibility: visible;
+  opacity: 1;
+}
+.spplink-cont:focus .spp-hint {
+  visibility: visible;
+  opacity: 1;
+}
+.rec-line1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 0px;
+  margin-bottom: 18px;
+  /*border: 1px solid red;*/
+}
+.line1-except-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  margin-top: 3px;
+  /*border: 1px solid blue;*/
+}
+.line1-except-links > * {
+  /*border: 1px solid goldenrod;*/
+}
+.recline1-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  margin-left: 20px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 1.2;
+}
+.recline1-links > * {
+  padding: 0px;
+}
+.tri-t, .tri-n, .tri-p {
+  font-size: 0.7rem;
+  opacity: 50%;
+}
+.tri-p, .tri-t {padding-right: 3px;}
+.tri-n {padding-left: 3px;}
+
+.rec-line1 h3 {
+  /*width: 66%;*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-weight: normal;
+  font-size: 1rem;
+  padding-right: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.rec-line1 ul {
+  flex-grow: 0;
+  flex-shrink: 0;
+  list-style-type: none;
+  border-left: 1px solid rgb(200, 200, 200);
+  padding-left: 8px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 16px;
+}
+.rec-line1 ul li {
+  padding: 0;
+  margin: 0;
+}
+/*
+.rec-line1 {
+  margin-bottom: 20px;
+}
+.rec-line1 h3 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+*/
+.rec-line1 h3 b {
+  font-weight: bold;
+}
+/*
+.life-stages, .host-species {
+  margin-left: 8px;
+  margin-right: 0px;
+}
+*/
+/*
+.rec-stats {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  padding: 0;
+}
+.rec-stats li {
+  display: inline-block;
+  margin-left: 6px;
+  break-inside: avoid;
+}
+*/
+.line1link-spp, .line1link-stages {
+  /*text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgb(150, 150, 150);*/
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 2px dotted rgb(150, 150, 150);
+  color: black;
+}
+.line1link-spp abbr, .line1link-stages abbr {
+  font-variant: normal;
+  text-decoration: none;
+}
+line1link-stages abbr {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.bug, .leaf {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  margin-right: 2px;
+  opacity: 90%;
+}
+
+/* "Bonus" images ("sideimg")
+See surveywide-styles.css */
+
+/*Text and figures in main body */
+#genus-records h2 {
+  margin-bottom: 18px;
+}
+.fig-1img .fig-links,
+.recline1-links, 
+.rectxt-links,  
+.summ-links,
+.h2-links {
+  margin-left: 13px;
+}
+.rl table {
+  display: block;
+  width: 500px;
+  margin-left: 40px;
+  border: none;
+  /*border: 1px solid rgb(200, 200, 200);*/
+  border-collapse: separate;
+}
+.rl table td {
+  border: 1px solid white;
+  background-color: transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.rl table tr td:first-of-type {
+  text-align: right;
+  font-weight: 300;
+  background-color: rgb(240, 240, 240);
+}
+.rl table span {
+  /*background-color: rgb(235, 235, 235);*/
+}
+
+.rl p:last-of-type {
+  display: inline;
+}
+.rectxt-links { /*Toggle at bottom*/
+/* use float:right if desired, it works*/
+  display: inline-block;
+  break-inside: avoid;
+}
+.fig-1img, .fig-3img {
+  display: block;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-main-nc, .img-main-yc {
+  width: min-content;
+}
+.fig-1img .caption {
+  display: block;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fig-3img-flex-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+.img-side-yc {
+  width: min-content;
+}
+.img-main-nc, .img-side-yc { /*See note #2 at bottom */
+  position: relative;
+  line-height: 0;
+}
+.fig-3img .img-side-yc {
+  margin-top: 4px;
+  margin-right: 4px;
+}
+.fig-3img .caption {
+  margin-top: 4px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 120px;
+  flex-grow: 1;
+}
+.caption p {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 3px;
+  padding-bottom: 0px;
+}
+.caption ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.caption li {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 5px;
+}
+.fig-1img .caption p {
+  display: inline;
+}
+
+/*  Styles for figure labels (A,B,C,etc.); see note #3 */
+.fignum {
+  position: absolute;
+  line-height: normal;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bshad {text-shadow: 0px 0px 5px black;}
+.wshad {text-shadow: 0px 0px 5px white;}
+.gshad {text-shadow: 0px 0px 5px rgb(80, 80, 80);}
+.nshad {text-shadow: none;}
+.bot-l {left: 10px; bottom: 6px;}
+.bot-r {right: 20px; bottom: 6px;}
+.top-l {left: 10px; top: 10px;}
+.top-r {right: 20px; top: 10px;}
+.white {color: white;}
+.black{color: black;}
+.gray{color: rgb(80, 80, 80);}
+
+#t0012 .fignum {display: none;}
+
+/* "Additional Images" (gallery) */
+#gallery {
+  margin-top: 30px;
+}
+.gallery-compact-view,
+.gallery-split-view-unit {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*1fr 1fr 1fr;*/
+  column-gap: 14px;
+  /*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+}
+.gallery-split-view-unit {
+  padding-bottom: 12px;
+}
+.gallery-split-view-unit:not(:last-of-type) {
+  border-bottom: 2px dotted rgb(210, 210, 210);
+}
+.gallery-split-view .unit-header-cont {
+  margin-top: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  /*
+  background-color: rgb(240, 240, 240);
+  */
+}
+.gallery-split-view h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.0rem;
+  font-weight: normal;
+}
+
+.gallery-fig-cont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /*justify-self: center;*/
+  width: 275px;
+}
+#gallery figure {
+  width: min-content; /*360px*/
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8px;
+  padding: 0;
+  /*
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  */
+}
+.gallery-img-cont a {
+  display: block;
+  width: min-content;
+  height: min-content;
+  padding: 0;
+  margin: 0;
+}
+.gallery-img-cont {
+  display: flex;
+  width: min-content;
+  height: 240px; /*300px*/
+  margin-left: 0px; /*5px*/
+  margin-right: 0px; /*5px*/
+  padding: 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+#gallery img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 275px;/*formerly not set*/
+  max-height: 240px; /*formerly not set*/
+}
+#gallery figcaption {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* References 
+See surveywide-styles.css */
+
+/* Page metadata */
+#genus-metadata p {
+  font-style: italic;
+  color: rgb(100, 100, 100);
+}
+
+/* Toggle "View all images" | "Top" links in rectxt, recline1, fig */
+.rectxt-links {display: none;}
+
+
+
+/* ================ MEDIA QUERIES ================== */
+
+@media (max-width: 1420px) {
+  .gallery-compact-view,
+  .gallery-split-view-unit {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1275px) {
+  #m {
+    right: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  #column {
+    width: 100%;
+    border-right: 0px;
+    border-left: 0px;
+  }
+  main {margin-left: 10px; margin-right: 10px;}
+  #genus-heading {
+    margin-top: 8px;
+  }
+  #m {
+    display: none;
+  }
+  nav.gn {
+    width: 100%;
+  }
+  .spplink-cont .spp-hint {
+    width: 80px;
+    margin-left: -85px;
+  }
+  .fig-3img, .fig-1img {
+    max-width: 90vw;
+  }
+  .img-main-nc, .img-main-yc {
+    display: block;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-main-nc img {
+    max-width: 90vw;
+  }
+  .img-main-yc img {
+    display: block;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+}
+@media (max-width: 940px) {
+  .fig-3img-flex-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fig-3img .caption {
+    width: 350px;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 90%;
+  }
+  body {
+    overflow-wrap: break-word;
+  }
+  .gen-pg h1 {
+    margin-bottom: 16px;
+  }
+  #rflex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #rlist table {
+    font-size: 0.9rem;
+  }
+  .lnktop, .lnkall, .lnkq {
+    font-size: 0.9rem;
+  }
+  .fignum {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .spplink-cont .spp-hint {
+    width: 60px;
+    top: 110%;
+    left: 5%;
+    margin-left: -70px;
+  }
+  .img-side-yc img {
+    max-width: 85vw; 
+    /* Orig. width: 100%, that's it */
+  }
+  .img-side-yc {
+    max-width: 85vw; 
+    /* Orig. min-width: 65%, that's it */
+  }
+  .fig-3img .caption {
+    width: 75%;
+  }
+}
+@media (max-width: 350px) {
+/* Tempted to move all this to surveywide-styles? See [6] */
+/* This is a work in progress as of Sept. '25. Imgs esp. still need work.*/
+  /* Fonts */
+  html, body {font-size: 8pt;}
+  .lnktop, .lnkall, .lnkq {font-size: 0.5rem;}
+  h2 .lnktop {font-size: 0.5rem;}
+  h2 a {font-size: 0.5rem;}
+  .gen-pg h2 {font-size: 0.6rem;}
+  #rflex {font-size: 0.5rem;}
+  #rlist table {font-size: 0.4rem; margin-left: 0px; padding-left: 0px;}
+  #rthumbs button {font-size: 0.5rem;}
+  .spplink-cont .spp-hint {font-size: 0.7rem;}
+  .fignum {font-size: 0.6rem;}
+  #genus-summary, #genus-records, #genus-species, #genus-references, #genus-metadata {
+    font-size: 0.5rem;
+  }
+  
+  main {margin-left: 3px; margin-right: 3px;}
+  #genus-heading {
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  .gen-pg h1 {margin-top: 5px; margin-bottom: 3px;}
+  #intra-nav {margin-top: 5px; margin-bottom: 5px;}
+
+  #rflex {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  #rthumbs {
+    padding-top: 20px;
+    margin-left: 0px;
+  }
+  #thumbWindow {
+    max-width: 70vw;
+    padding: 2px;
+    margin: 0px;
+  }
+  #thumbWindow img {
+    max-width: 60vw;
+    height: auto;
+  }
+  #now-thumb {
+    max-width: 60vw;
+    height: auto;
+  }
+  #rlist table {
+    margin-right: 0px;
+  }
+  #rlist table tr th:nth-child(1) {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #rlist table tr td:nth-child(1) {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #rlist table tr th:nth-child(3) {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #rlist table tr td:nth-child(3) {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #rlist table tr td:nth-child(4) {
+    padding-right: 2px;
+  }
+  #genus-species li {
+    margin-left: 8px;
+  }
+  .spplink-cont .spp-hint {
+    width: 40px;
+    top: 110%;
+    left: 5%;
+    margin-left: -55px;
+  }
+}
+@media (max-width: 125px) {
+  /* Fonts */
+  .fignum {font-size: 0.7rem;}
+}
+
+/*NOTES*/
+
+/* 1. For flex layout editing: #rflex {border: 1px solid red;} 
+#rlist {border: 1px solid blue;} #rthumbs {border: 1px solid green;} */
+
+/* 2. This is needed, else a gap appears
+between bottom of img and bottom of div*/
+
+/* 3. WEBKIT TEXT STROKE
+The -webkit-text-stroke property is usable for
+drawing an outline around text for the figure
+numbers, but Brackets doesn't recognize it and
+I also found a website saying it's not supported
+by "legacy browsers."  On the other hand, MDN
+calls it "baseline - widely supported."*/
+
+/* 4. Miscellaneous deprecated styles used 
+on test pages (saving for now):
+
+#gen-pg-recs {
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 1rem;
+  margin-left: 15px;
+  padding-left: 0px;
+}
+#gen-pg-recs li {
+  white-space: pre-wrap;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#recs {
+  font-family: monospace;
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+#recs a {
+  page-break-before: always;
+}
+#recs img {
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  vertical-align: middle;
+}
+@media (max-width: 500px) {
+  #gen-pg-recs li {
+    margin-bottom: 20px;
+  }
+}
+End misc. deprecated styles */
+
+/* 5. Deprecated 2-col spp-code styles
+#genus-species ul {
+  padding-left: 0px;
+  max-height: 25vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+#genus-species li {
+  flex-basis: 20px;
+  width: 45%;
+  margin-left: 4%;
+}
+@media (max-width: 1400px) {
+  #genus-species ul {
+    max-height: none;
+  }
+  #genus-species li {
+    width: 88%;
+    margin-left: 15px;
+  }
+}
+*/
+/*6. I didn't have much luck trying to do this all from surveywide-styles.  Part of the problem is that, in the genus and species pages, both in the main CSS body and in the larger media queries, I use a lot of very specific # and . selectors for setting font sizes and such -- selectors that are more specific than any I would put in the surveywide-styles, so they end up overruling what is in surveywide-styles.  It may also be because I include surveywide-styles first in the <link> list.*/

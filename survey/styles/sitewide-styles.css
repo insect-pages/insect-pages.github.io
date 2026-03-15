@@ -1,0 +1,86 @@
+.secondary-heading, #allfinds-heading, 
+#genus-heading, #spp-heading, #expl-heading { 
+  margin-top: 40px;
+}
+i {
+  font-style: italic; 
+}
+b {
+  font-weight: bold;
+}
+.b {
+  font-weight: bold;
+}
+a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+/*H1 TITLE LINE STYLES
+I've placed these styles here in case I want to standardize them someday.
+.report h1 (AKA #rec-title) is the h1 title on the reports pages.
+.secondary h1, .gen-pg h1 is for the "secondary" and genus pages. */
+
+.report h1 {
+  display: block;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  margin-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+}
+.secondary h1, .gen-pg h1, .spp-pg h1, .expl h1, .allfinds h1 {
+  position: relative;
+  margin-top: 17px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgb(165, 165, 165);
+}
+.secondary h1, .gen-pg h1, .expl h1 {
+  margin-bottom: 30px;
+}
+#m { /*Penstemon flourish img*/
+  position: absolute;
+  bottom: 0px; right: -90px;
+  z-index: -1;
+}
+
+/*FOOTER STYLING
+.copy is for a <p> tag, .footer is for an enclosing <section> tag.
+The "copyright JvdL" (not incl. yr) text is directly included in the 
+.copy <p> tags in the HTML of basically all HTML files in gh_start.
+Year is added via a "content:" CSS property on the #copy-yr <span> tag. */
+#copy-yr::after {
+  content: ', 2023-2025';
+}
+.copy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/*MEDIA QUERIES*/
+@media print {
+  body {
+    background-color: white;
+  }
+  #nav {
+    display: none;
+  }
+  #mainbody {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+}
