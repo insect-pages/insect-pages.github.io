@@ -42,11 +42,11 @@
 #genera-list td ul li {
   display: inline;
 }
-#genera-list td ul li:not(:first-of-type)::before {
+/* #genera-list td ul li:not(:first-of-type)::before {
   content: " ● ";
   color: rgb(100, 100, 100);
   font-size: 0.8rem;
-}
+} */
 #findings-table-holder {
   position: relative;
 }
