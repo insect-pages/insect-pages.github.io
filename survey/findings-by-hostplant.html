@@ -8,10 +8,15 @@
 <!--PF--><link rel="stylesheet" href="styles/surveywide-styles.css">
 <!--PG--><link rel="stylesheet" href="styles/pages-styles.css">
 <!--PG2--><link rel="stylesheet" href="styles/findings-table-styles.css">
+<script>
+if (window.location.hash) {
+  window.scrollTo(0, 0);
+}
+</script>
 <!--PH--><title>Browse By Hostplant</title>
 </head>
 <body class="page" id="findings-by-hostplant-page">
-<div id="column"><!--<a href="#primary-content" class="skip-link">Skip to main content</a>-->
+<div id="column"><a href="#primary-content" class="skip-link">Skip to main content</a>
 
 <!--Banner-->
 <header>
@@ -366,7 +371,7 @@
 <section id="page-findings-table">
 <div class="h2-cont"><h2 id="table-heading">Records of insect-plant associations from the survey</h2><a class="lnktop" href="#">Top</a></div>
 
-<div id="findings-table-holder"><!--<a id="toplink" href="#">Top</a>-->
+<div id="findings-table-holder"><a id="toplink" href="#">Top</a>
 <!--FINDINGS-TABLE--><table id="findings-table">
     <caption>Master list of insects recorded from stems and stemlike structures, organized alphabetically by host plant genus</caption>
     <thead>
@@ -7544,5 +7549,16 @@
 <p class="copy">All content copyright</p><p class="copy"><span id="copy-yr">© John van der Linden</span></p>
 </footer>
 
+<script>
+window.onload = function() {
+  if (window.location.hash) {
+    var aName = window.location.hash.substring(1);
+    var targetElement = document.getElementById(aName);
+    if (targetElement) {
+      targetElement.scrollIntoView({{ behavior: "smooth", block: "start" }});
+    }
+  }
+};
+</script>
 </body>
 </html>
