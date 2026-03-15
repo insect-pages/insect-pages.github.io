@@ -47,6 +47,9 @@
   color: rgb(100, 100, 100);
   font-size: 0.8rem;
 } */
+#genera-list td ul li:not(:first-of-type) {
+  margin-left: 10px;
+}
 #findings-table-holder {
   position: relative;
 }
