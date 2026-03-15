@@ -54,6 +54,7 @@
   position: relative;
 }
 #toplink {
+  display: none;
   position: sticky;
   float: right;
   top: 0px; right: 0px;
