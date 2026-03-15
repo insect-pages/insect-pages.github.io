@@ -3,6 +3,9 @@
   scroll-margin-top: 40px;
 }
 */
+body {
+  overflow-anchor: none;
+}
 #genera-list {
   border: 1px solid rgb(100, 100, 100);
   border-collapse: collapse;
