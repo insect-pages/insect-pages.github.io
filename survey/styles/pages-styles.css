@@ -63,6 +63,14 @@ figure {
 figcaption {
   font-size: 0.9rem;
 }
+.banner {
+  width: min-content;
+  margin: 35px auto 14px auto;
+  border: 0px;
+}
+.banner img {
+  border-radius: 5px;
+}
 
 /* References */
 #page-references ul {
