@@ -154,6 +154,16 @@ footer {
   color: rgb(60, 60, 60);
   text-align: center;
 }
+footer p {
+  margin: 0; padding: 0;
+}
+footer a, footer a:visited {
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 
 /* Media queries */
 @media (max-width: 800px) {
