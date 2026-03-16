@@ -1,5 +1,6 @@
 /* STYLES FOR GENUS PAGES */
 
+.lnkq {display: none;}
 main {margin-bottom: 120px;}
 .n {display: none;}
 p:has(.longquote) {
@@ -21,7 +22,7 @@ p:has(.longquote) {
 #m {display: none; z-index: 1;}
 header, nav.top {position: relative; z-index: 2;}
 #genus-heading { /* See also @media 1100px */
-  padding-top: 40px;
+  padding-top: 15px;
   margin-bottom: 30px;
   /*background-image: linear-gradient(to left, rgb(20 20 20 / 40%), rgb(255 255 255 / 0%) 6%), url(../images/fly6-mod-100h-brighter.png);*/
   /*background-image: linear-gradient(to right, rgb(20 20 20 / 40%), rgb(255 255 255 / 0%)), url(../images/fly6-mod-100h-brighter.png);*/
@@ -652,8 +653,6 @@ See surveywide-styles.css */
   #m {
     right: 0px;
   }
-}
-@media (max-width: 1100px) {
   #column {
     width: 100%;
     border-right: 0px;
@@ -700,6 +699,10 @@ See surveywide-styles.css */
   .fig-3img .caption {
     width: 350px;
   }
+  .gallery-compact-view,
+  .gallery-split-view-unit {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 850px) {
   html {
@@ -726,6 +729,9 @@ See surveywide-styles.css */
   }
 }
 @media (max-width: 650px) {
+  html {
+    font-size: 80%;
+  }
   .spplink-cont .spp-hint {
     width: 60px;
     top: 110%;
@@ -743,13 +749,25 @@ See surveywide-styles.css */
   .fig-3img .caption {
     width: 75%;
   }
+  .gallery-compact-view,
+  .gallery-split-view-unit {
+    grid-template-columns: 1fr;
+  }
+  .gallery-fig-cont, .gallery-img-cont, #gallery figure, #gallery img {height: auto;}
+  .rec-line1 {width: 95vw;}
+  .line1-except-links {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .recline1-links {width: 25%;}
 }
 @media (max-width: 350px) {
 /* Tempted to move all this to surveywide-styles? See [6] */
 /* This is a work in progress as of Sept. '25. Imgs esp. still need work.*/
   /* Fonts */
   html, body {font-size: 8pt;}
-  .lnktop, .lnkall, .lnkq {font-size: 0.5rem;}
+  .lnktop, .lnkall, .lnkq, .fig-links .lnktop {font-size: 0.5rem;}
   h2 .lnktop {font-size: 0.5rem;}
   h2 a {font-size: 0.5rem;}
   .gen-pg h2 {font-size: 0.6rem;}
@@ -758,9 +776,14 @@ See surveywide-styles.css */
   #rthumbs button {font-size: 0.5rem;}
   .spplink-cont .spp-hint {font-size: 0.7rem;}
   .fignum {font-size: 0.6rem;}
+  .citebacks, .citebacks a {font-size: 0.5rem;}
+  #genus-gallery, #gallery h3, #gallery figcaption {font-size: 0.5rem;}
+  .rec-line1, .rec-stats, .recline1-links, .line1-except-links h3 {font-size: 0.5rem;}
   #genus-summary, #genus-records, #genus-species, #genus-references, #genus-metadata {
     font-size: 0.5rem;
   }
+  
+  .bug, .leaf {width: 4vw;}
   
   main {margin-left: 3px; margin-right: 3px;}
   #genus-heading {
@@ -823,6 +846,17 @@ See surveywide-styles.css */
     left: 5%;
     margin-left: -55px;
   }
+  .gallery-compact-view img,
+  .gallery-split-view-unit img {
+    width: 80vw;
+  }
+  #genus-gallery {
+    width: 90vw;
+  }
+  .gallery-split-view, .gallery-split-view-unit, .unit-header-cont, .gallery-fig-cont {
+    width: 80vw;
+  }
+  
 }
 @media (max-width: 125px) {
   /* Fonts */
