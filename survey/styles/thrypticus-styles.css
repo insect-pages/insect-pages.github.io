@@ -304,15 +304,13 @@ h2 {
     margin-right: auto;
   }
 }
-/*
 @media (max-width: 500px) {
   a {overflow-wrap: anywhere;}
   .thr-fig-nav {
-    width: 30px;
-    top: 0px; right: -20px;
+    display: none;
   }
-}*/
-@media (max-width: 500px) {
+}
+@media (max-width: 350px) {
   section {font-size: 0.6rem;}
   #title-author h1 {font-size: 0.8rem;}
   #title-author sup {font-size: 0.6rem;}
@@ -322,8 +320,4 @@ h2 {
   #hosts h3, #hosts h4, #hosts h5 {font-size: 0.6rem;}
   #hosts p {font-size: 0.6rem;}
   h2 {font-size: 0.7rem;}
-  a {overflow-wrap: anywhere;}
-  .thr-fig-nav {
-    display: none;
-  }
 }

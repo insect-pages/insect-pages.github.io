@@ -174,10 +174,17 @@ footer a:hover {
     padding-bottom: 160px;
   }
 }
-@media (max-width: 400px) {
-  html, body {
-    font-size: 11px;
+@media (max-width: 600px) {
+  #parag {
+    width: 130px;
+    padding-top: 130px;
+    border-radius: 15px;
   }
+}
+@media (max-width: 400px) {
+  /*html, body {
+    font-size: 11px;
+  }*/
   main, #column {
     background-image: unset;
   }
@@ -190,15 +197,16 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-items: center;
+    /*align-items: center;
+    justify-items: center;*/
   }
-  #navbar li {
+  /*#navbar li {
     flex-grow: 1;
-  }
+  }*/
   #parag {
     width: 50px;
     padding-top: 15px;
+    border-radius: 0px;
   }
   main ul, main li {
     padding-left: 0px;
@@ -218,9 +226,10 @@ footer a:hover {
   }
 }
 @media (max-width: 200px) {
-  html, body {
+  /*html, body {
     font-size: 8px;
-  }
+  }*/
+  main {font-size: 8px;}
   #signature img {
     width: 15px;
   }

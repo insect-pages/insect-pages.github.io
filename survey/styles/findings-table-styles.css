@@ -96,3 +96,18 @@ body {
 #findings-table .gp2 td:nth-of-type(2) {background-color: rgb(210, 220, 180);}
 
 #findings-table .gp-first td, #findings-table .gp-first th {border-top: 2px solid rgb(100, 100, 100);}
+
+@media (max-width: 650px) {
+  #toplink {background-color: white; padding: 2px;}
+  #findings-table {width: 99%; font-size: 0.7rem;}
+  #findings-table tbody th {width: auto;} /*rgb(180, 250, 180)*/
+  #findings-table td:nth-of-type(1) {width: auto;}
+  #findings-table td:nth-of-type(2) {width: auto;}
+  #findings-table td:nth-of-type(3) {width: auto;}
+  #findings-table td:nth-of-type(4) {width: auto;}
+  #findings-table td:nth-of-type(5) {width: auto;}
+  #findings-table td:nth-of-type(6) {width: 10%;}
+}
+@media (max-width: 500px) {
+  #findings-table {font-size: 0.6rem;}
+}

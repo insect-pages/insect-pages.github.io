@@ -287,6 +287,15 @@ span.cite {
 }
 
 /* Media queries */
+@media (max-width: 1100px) {
+  #column {
+    width: 100%;
+    border-right: 0px;
+    border-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (max-width: 800px) {
   header {
     background-image: url("../images/sizes/reg/banner-filler-343px.jpg");
@@ -335,9 +344,9 @@ span.cite {
     background-position: top 0px right 0px, top 0px right 2156px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) { /* 350px*/
   /* Fonts */
-  html, body {font-size: 8pt;}
+  html, body {font-size: 11px;} /* 8pt*/
   header {font-size: 0.8rem;}
   nav.top, nav.gn, #intra-nav {font-size: 0.7rem;}
   .gen-pg h1, .spp-pg h1 {font-size: 0.8rem;}

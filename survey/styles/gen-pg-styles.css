@@ -705,9 +705,9 @@ See surveywide-styles.css */
   }
 }
 @media (max-width: 850px) {
-  html {
+  /*html {
     font-size: 90%;
-  }
+  }*/
   body {
     overflow-wrap: break-word;
   }
@@ -729,9 +729,9 @@ See surveywide-styles.css */
   }
 }
 @media (max-width: 650px) {
-  html {
+  /*html {
     font-size: 80%;
-  }
+  }*/
   .spplink-cont .spp-hint {
     width: 60px;
     top: 110%;
@@ -754,19 +754,47 @@ See surveywide-styles.css */
     grid-template-columns: 1fr;
   }
   .gallery-fig-cont, .gallery-img-cont, #gallery figure, #gallery img {height: auto;}
-  .rec-line1 {width: 95vw;}
+  .rec-line1 {width: 90vw; display: flex; flex-direction: column-reverse;}
   .line1-except-links {
-    width: 75%;
     display: flex;
     flex-direction: column;
   }
-  .recline1-links {width: 25%;}
+    #rthumbs {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #thumb-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: auto;
+    padding: 0px;
+    width: 55vw;
+    margin: 0;
+  }
+  #thumb-and-desc {
+    padding: 0px;
+    margin: 0;
+  }
+  #btns {
+    margin-top: 15px;
+  }
+  #rthumbs img {
+    width: 50vw; /*215px for both*/
+    height: auto;
+  }
+  #rthumbs button {
+    font-size: 2.5rem;
+    margin: 0px;
+  }
 }
 @media (max-width: 350px) {
 /* Tempted to move all this to surveywide-styles? See [6] */
 /* This is a work in progress as of Sept. '25. Imgs esp. still need work.*/
   /* Fonts */
-  html, body {font-size: 8pt;}
+  /*#genus-quicklist {display: none;}*/
+  /*html, body {font-size: 8pt;}*/
   .lnktop, .lnkall, .lnkq, .fig-links .lnktop {font-size: 0.5rem;}
   h2 .lnktop {font-size: 0.5rem;}
   h2 a {font-size: 0.5rem;}

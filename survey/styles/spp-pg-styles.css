@@ -297,11 +297,6 @@ footer {
   #m {right: 0px;}
 }
 @media (max-width: 1100px) {
-  #column {
-    width: 100%;
-    border-right: 0px;
-    border-left: 0px;
-  }
   main {margin-left: 10px; margin-right: 10px;}
   #species-heading {
     margin-top: 8px;
@@ -329,11 +324,11 @@ footer {
   }
 }
 @media (max-width: 900px) {
-  html {
-    font-size: 90%;
-  }
   body {
     overflow-wrap: break-word;
+  }
+  main {
+    font-size: 90%;
   }
   .lnktop, .lnkall, .lnkq {
     font-size: 0.9rem;
@@ -377,7 +372,7 @@ footer {
 @media (max-width: 350px) {
 /* Tempted to move all this to surveywide-styles? See [1] */
   /* Fonts */
-  html, body {font-size: 9pt;}
+  /*html, body {font-size: 11px;}*/ /* 8pt*/
   .lnktop, .lnkall, .lnkq {font-size: 0.5rem;}
   h2 .lnktop {font-size: 0.5rem;}
   .h2-links .lnktop, .h2-links .lnkq {font-size: 0.5rem;}
