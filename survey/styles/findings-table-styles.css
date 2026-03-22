@@ -62,6 +62,7 @@ body {
 /* Host species table */
 #hspp-table-holder {
   position: relative;
+  width: 100%; /*Needed for table width %s to calc correctly */
 }
 #hspp-table {
   width: 95%;
@@ -93,6 +94,7 @@ body {
 /* Findings table */
 #findings-table-holder {
   position: relative;
+  width: 100%; /*Needed for table width %s to calc correctly */
 }
 .toplink {
   position: sticky;
@@ -117,11 +119,11 @@ body {
 
 #findings-table tbody th {width: 5%; border: 1px solid rgb(170, 170, 170); background-color: rgb(200, 250, 160);} /*rgb(180, 250, 180)*/
 #findings-table td:nth-of-type(1) {width: 10%; word-break: break-all;}
-#findings-table td:nth-of-type(2) {width: 13%; word-break: break-all;}
-#findings-table td:nth-of-type(3) {width: 7%;} /*Host spp. */
+#findings-table td:nth-of-type(2) {width: 11%; word-break: break-all;}
+#findings-table td:nth-of-type(3) {width: 5%;} /*Host spp. */
 #findings-table td:nth-of-type(4) {width: 15%; border-left: 2px solid rgb(170, 170, 170);}
-#findings-table td:nth-of-type(5) {width: 38%;} /*Insect tax. */
-#findings-table td:nth-of-type(6) {width: 7%;}
+#findings-table td:nth-of-type(5) {width: 42%;} /*Insect tax. */
+#findings-table td:nth-of-type(6) {width: 7%; word-break: break-all;}
 #findings-table td:nth-of-type(7) {width: 5%; word-break: break-all;}
 
 #findings-table td:nth-of-type(3) a {color: rgb(100, 100, 100);}
@@ -137,22 +139,22 @@ body {
 
 @media (max-width: 1400px) {.circ {display: none;} #intra-nav li {margin-right: 15px;}}
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .toplink {background-color: white; padding: 2px;}
   #findings-table {width: 99%; font-size: 0.7rem;}
   #findings-table tbody th {width: 5%;} /*rgb(180, 250, 180)*/
-  #findings-table td:nth-of-type(1) {width: 15%;}
+  #findings-table td:nth-of-type(1) {width: 20%;}
   #findings-table td:nth-of-type(2) {width: 20%;}
   #findings-table td:nth-of-type(3) {width: 5%;}
   #findings-table td:nth-of-type(4) {width: 10%;}
-  #findings-table td:nth-of-type(5) {width: 24%;}
-  #findings-table td:nth-of-type(6) {width: 5%;}
+  #findings-table td:nth-of-type(5) {width: 20%;}
+  #findings-table td:nth-of-type(6) {width: 4%;}
   #findings-table td:nth-of-type(7) {width: 16%;}
   #hspp-table tbody th {
     word-break: break-all;
     width: 35%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #findings-table {font-size: 0.6rem;}
 }
