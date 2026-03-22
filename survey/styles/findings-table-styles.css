@@ -58,10 +58,43 @@ body {
 #genera-list td ul li:not(:first-of-type) {
   margin-left: 10px;
 }
+
+/* Host species table */
+#hspp-table-holder {
+  position: relative;
+}
+#hspp-table {
+  width: 95%;
+  margin: 10px auto 10px auto;
+  border-collapse: collapse;
+  border: 1px solid rgb(180, 180, 180);
+  font-size: 0.8rem;
+}
+#hspp-table td, #hspp-table th {
+  border: 1px solid rgb(180, 180, 180);
+  padding: 2px;
+}
+#hspp-table th {
+  background-color: rgb(215, 215, 215);
+}
+#hspp-table tbody th {
+  font-weight: normal;
+  width: 20%;
+}
+#hspp-table tbody ul {
+  margin: 2px 0px 2px 20px; padding: 2px;
+}
+
+/* State codes section */
+#state-codes ol, #state-codes p {
+  font-size: 0.9rem;
+}
+
+/* Findings table */
 #findings-table-holder {
   position: relative;
 }
-#toplink {
+.toplink {
   position: sticky;
   float: right;
   top: 0px; right: 0px;
@@ -85,28 +118,40 @@ body {
 #findings-table tbody th {width: 5%; border: 1px solid rgb(170, 170, 170); background-color: rgb(200, 250, 160);} /*rgb(180, 250, 180)*/
 #findings-table td:nth-of-type(1) {width: 10%; word-break: break-all;}
 #findings-table td:nth-of-type(2) {width: 13%; word-break: break-all;}
-#findings-table td:nth-of-type(3) {width: 15%; border-left: 2px solid rgb(170, 170, 170);}
-#findings-table td:nth-of-type(4) {width: 45%;}
-#findings-table td:nth-of-type(5) {width: 7%;}
-#findings-table td:nth-of-type(6) {width: 5%; word-break: break-all;}
+#findings-table td:nth-of-type(3) {width: 7%;} /*Host spp. */
+#findings-table td:nth-of-type(4) {width: 15%; border-left: 2px solid rgb(170, 170, 170);}
+#findings-table td:nth-of-type(5) {width: 38%;} /*Insect tax. */
+#findings-table td:nth-of-type(6) {width: 7%;}
+#findings-table td:nth-of-type(7) {width: 5%; word-break: break-all;}
+
+#findings-table td:nth-of-type(3) a {color: rgb(100, 100, 100);}
 
 #findings-table .gp1 td:nth-of-type(1) {background-color: rgb(240, 245, 220);}
 #findings-table .gp1 td:nth-of-type(2) {background-color: rgb(240, 245, 220);}
+#findings-table .gp1 td:nth-of-type(3) {background-color: rgb(240, 245, 220);}
 #findings-table .gp2 td:nth-of-type(1) {background-color: rgb(210, 220, 180);}
 #findings-table .gp2 td:nth-of-type(2) {background-color: rgb(210, 220, 180);}
+#findings-table .gp2 td:nth-of-type(3) {background-color: rgb(210, 220, 180);}
 
 #findings-table .gp-first td, #findings-table .gp-first th {border-top: 2px solid rgb(100, 100, 100);}
 
+@media (max-width: 1400px) {.circ {display: none;} #intra-nav li {margin-right: 15px;}}
+
 @media (max-width: 650px) {
-  #toplink {background-color: white; padding: 2px;}
+  .toplink {background-color: white; padding: 2px;}
   #findings-table {width: 99%; font-size: 0.7rem;}
-  #findings-table tbody th {width: auto;} /*rgb(180, 250, 180)*/
-  #findings-table td:nth-of-type(1) {width: auto;}
-  #findings-table td:nth-of-type(2) {width: auto;}
-  #findings-table td:nth-of-type(3) {width: auto;}
-  #findings-table td:nth-of-type(4) {width: auto;}
-  #findings-table td:nth-of-type(5) {width: auto;}
-  #findings-table td:nth-of-type(6) {width: 10%;}
+  #findings-table tbody th {width: 5%;} /*rgb(180, 250, 180)*/
+  #findings-table td:nth-of-type(1) {width: 15%;}
+  #findings-table td:nth-of-type(2) {width: 20%;}
+  #findings-table td:nth-of-type(3) {width: 5%;}
+  #findings-table td:nth-of-type(4) {width: 10%;}
+  #findings-table td:nth-of-type(5) {width: 24%;}
+  #findings-table td:nth-of-type(6) {width: 5%;}
+  #findings-table td:nth-of-type(7) {width: 16%;}
+  #hspp-table tbody th {
+    word-break: break-all;
+    width: 35%;
+  }
 }
 @media (max-width: 500px) {
   #findings-table {font-size: 0.6rem;}
