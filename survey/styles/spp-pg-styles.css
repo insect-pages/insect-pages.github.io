@@ -7,6 +7,7 @@ blockquote {
   font-size: 0.9rem;
   font-style: italic;
 }
+abbr {text-decoration: none;}
 
 /* Penstemon flourish */
 .spp-pg h1 {position: relative;}
