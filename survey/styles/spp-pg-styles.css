@@ -113,6 +113,12 @@ section:not(:last-of-type) {
   font-style: italic;
   margin-top: 28px;
 }
+.nb {
+  border-left: 3px solid rgb(70, 130, 70);
+  margin: auto 5px auto 5px;
+  padding: 6px 10px 6px 10px;
+  background-color: rgb(245, 245, 245);
+}
 
 /* All images */
 .img-n {

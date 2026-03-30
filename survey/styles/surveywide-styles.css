@@ -270,6 +270,9 @@ span.cite {
 #copy-yr::after {
   content: ', 2023-2026';
 }
+#record0801 #copy-yr::after {
+  content: ', 2023-2026 (Record Details text on this page: CC BY-NC-SA 3.0)';
+}
 .copy {
   display: block;
   margin-left: auto;
