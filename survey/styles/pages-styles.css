@@ -167,6 +167,16 @@ section:not(:first-of-type) {
   text-decoration: underline;*/
 }
 
+/* File type icons (Results) */
+.file-type-icon {
+  width: 18px;
+  height: auto;
+  position: relative;
+  top: 5px;
+}
+li .file-type-icon {margin-left: 7px;}
+.audio-i {opacity: 0.60;}
+
 /* References */
 #page-references ul {
   list-style-type: none;

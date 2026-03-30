@@ -26,14 +26,13 @@ a {
   top: 0;
 }
 
-/* Hide certain things in Favorites page */
-#record9007 .img-n {display: none;}
-#record9007 .gn {display: none;}
-#record9007 #intra-nav {display: none;}
-#record9007 #record-details {border-bottom: none; margin-bottom: 5px; padding-bottom: 5px;}
-#record9007 #record-details .h2-cont {display: none;}
-#record9007 #record-gallery .h2-cont {display: none;}
-#record9007 #record-details table {display: none;}
+/* Hide certain things in special species pages */
+.spp-special .gn {display: none;}
+.spp-special #intra-nav {display: none;}
+.spp-special #record-details {border-bottom: none; margin-bottom: 5px; padding-bottom: 5px;}
+.spp-special #record-details .h2-cont {display: none;}
+.spp-special #record-gallery .h2-cont {display: none;}
+.spp-special #record-details table {display: none;}
 
 /* Temporary, for genus page test (agera)
 Need to switch this to #column */
