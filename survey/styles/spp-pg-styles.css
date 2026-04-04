@@ -18,6 +18,29 @@ abbr {text-decoration: none;}
   z-index: 1;
 }
 
+/* Special species pages */
+.spp-special .gn {display: none;}
+.spp-special #record-details .h2-cont {display: none;}
+.spp-special #intra-nav {display: none;}
+.spp-special #record-details table {display: none;}
+.spp-special #record-details {border-bottom: none; margin-bottom: 0px; padding-bottom: 0px;}
+.spp-special #record-gallery {margin-top: 30px;}
+.spp-special #record-gallery h3 {display: inline; margin: 0; padding: 0; line-height: inherit; font-size: inherit;}
+.spp-special #record-gallery p {display: inline; margin: 0; padding: 0;}
+.spp-special .subgal {margin-bottom: 15px; padding-bottom: 0px;}
+.spp-special .subgal-cont {margin-bottom: 20px;}
+.subgal-nav li {list-style-type: disc;}
+.spp-special hr {
+  width: 60%;
+  margin: 5px auto 5px auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(220, 220, 220);
+}
+.spp-special .subgal-cont:last-of-type hr {
+  display: none;
+}
+
 /* Main section */
 main {
   margin-left: 60px;
@@ -182,7 +205,7 @@ section:not(:last-of-type) {
 }
 
 /* Additional images (gallery) */
-#gallery {
+#gallery, .subgal {
   margin-top: 5px;
   display: grid;
   grid-template-rows: auto;
@@ -190,13 +213,14 @@ section:not(:last-of-type) {
   column-gap: 12px;
   justify-items: center;
 }
+
 .gallery-fig-cont {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   /*width: 350px;*/
 }
-#gallery figure {
+#gallery figure, .subgal figure {
   width: min-content;
   margin-left: 0px;
   margin-right: 0px;
@@ -220,14 +244,14 @@ section:not(:last-of-type) {
   padding: 0;
   margin: 0;
 }
-#gallery img {
+#gallery img, .subgal img {
   display: block;
   margin: 0;
   padding: 0;
   /*max-width: 350px;
   max-height: 300px;*/
 }
-#gallery figcaption {
+#gallery figcaption, .subgal figcaption {
   padding-left: 5px;
   padding-right: 5px;
   margin-top: 4px;
@@ -272,11 +296,13 @@ footer {
 .i700 img {max-width: 700px;}
 
 /* Gallery image sizes */
-.i350 {grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}
+/*.i350 {grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}*/
+.i350 {grid-template-columns: repeat(auto-fill, 350px); justify-content: center;}
 .i350 .gallery-fig-cont {width: 350px;}
 .i350 .gallery-img-cont {height: 300px;}
 .i350 img {max-width: 350px; max-height: 300px;}
-.i275 {grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));}
+/*.i275 {grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));}*/
+.i275 {grid-template-columns: repeat(auto-fill, 275px); justify-content: center;}
 .i275 .gallery-fig-cont {width: 275px;}
 .i275 .gallery-img-cont {height: 240px;}
 .i275 img {max-width: 275px; max-height: 240px;}
@@ -293,10 +319,10 @@ footer {
 
 /* Additional media queries*/
 @media (max-width: 1400px) {
-  #gallery .gallery-fig-cont {
+  #gallery .gallery-fig-cont, .subgal .gallery-fig-cont {
     width: min-content;
   }
-  #gallery figure {
+  #gallery figure, .subgal figure {
     width: min-content;
   }
 }
@@ -353,18 +379,20 @@ footer {
   }
 }
 @media (max-width: 750px) {
-  #gallery .gallery-img-cont {
+  #gallery .gallery-img-cont, .subgal .gallery-img-cont {
     height: auto;
   }
 }
-@media (max-width: 425px) {
-  #gallery {
+@media (max-width: 600px) {
+  #gallery, .subgal {
     grid-template-columns: 1fr;
   }
-  #gallery .gallery-img-cont {
+}
+@media (max-width: 425px) {
+  #gallery .gallery-img-cont, .subgal .gallery-img-cont {
     max-width: 75vw;
   }
-  #gallery img {
+  #gallery img, .subgal img {
     max-width: 75vw;
   }
   #record-details table {
@@ -391,7 +419,7 @@ footer {
   #record-details, #record-images, #record-gallery, #record-references, #record-specdata, #record-metadata {font-size: 0.5rem;}
   .img-n {font-size: 0.5rem; padding: 2px;}
   .prev-next-inner {font-size: 0.5rem;}
-  #gallery figcaption {font-size: 0.5rem;}
+  #gallery figcaption, .subgal figcaption {font-size: 0.5rem;}
   .citeback {font-size: 0.5rem;}
   footer {font-size: 0.5rem;}
   #record-details table {font-size: 0.5rem;}
