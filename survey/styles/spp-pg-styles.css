@@ -293,6 +293,7 @@ footer {
 .i1125 img {max-width: 1125px;}
 .i1050 img {max-width: 1050px;}
 .i900 img {max-width: 900px;}
+.i800 img {max-width: 800px;}
 .i700 img {max-width: 700px;}
 
 /* Gallery image sizes */
@@ -313,6 +314,7 @@ footer {
 @media (max-width: 1400px) {.i1125 img {max-width: 75vw;}}
 @media (max-width: 1400px) {.i1050 img {max-width: 75vw;}}
 @media (max-width: 1200px) {.i900 img {max-width: 75vw;}}
+@media (max-width: 1050px) {.i800 img {max-width: 75vw;}}
 @media (max-width: 933px) {.i700 img {max-width: 75vw;}}
 
 /* For gallery image sizes (move & rename from below + add more) */
