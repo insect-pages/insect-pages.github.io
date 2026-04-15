@@ -1,6 +1,9 @@
 html, body {
   font-size: 110%;
 }
+.notice {
+  background-color: rgb(240, 150, 150);
+}
 a:visited, a:active, a:default {
   color: blue;
 }
@@ -24,13 +27,13 @@ h1, header p {
   padding: 30px;
   margin: 35px auto 35px auto;
 }
-#input-text {
+#input-text, #print-html {
   white-space: pre-wrap;
   width: 75%;
   margin: 30px auto 30px auto;
   padding: 20px;
   font-family: monospace;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
 }
 .genus h3 {
   font-size: 1.2rem;

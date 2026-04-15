@@ -13,7 +13,7 @@ let coupletChoiceHTML = ""; let coupletReferralValue; let coupletValueHTML = "";
 let choiceFullEndIndex = 0; let choiceStrictEndIndex = 0; let choiceExplHTML = "";
 let genusContentEndIndex; let genusContentStartIndex;
 let genusHTML = ""; let firstCoupletChoiceID = "";
-let allGeneraHTML = "";
+let allGeneraHTML = ""; let genusNameConverted;
 let allChoices = [];
 
 function setItalics(str) {
@@ -23,7 +23,8 @@ function setItalics(str) {
 }
 
 allGeneraLines.forEach((genusLine, genusNum) => {
-  genusHTML = br + `<div class="genus" id="${genusLine[1]}"><h3><i>${genusLine[1]}</i> (${genusLine[2]})</h3><ol>` + br;
+  genusNameConverted = genusLine[1].replace(/\s/g, "");
+  genusHTML = br + `<div class="genus" id="${genusNameConverted}"><h3><i>${genusLine[1]}</i> (${genusLine[2]})</h3><ol>` + br;
   genusContentStartIndex = genusLine.index + genusLine[0].length;
   if (genusNum < (allGeneraLines.length - 1)) {
     genusContentEndIndex = allGeneraLines[genusNum + 1].index;
@@ -44,7 +45,8 @@ allGeneraLines.forEach((genusLine, genusNum) => {
     } else {}
     choiceStrictEndIndex = choice.index + choice[0].length;
     if ((choiceStrictEndIndex + 5) < choiceFullEndIndex) {
-      choiceExplHTML = `<p class="choice-explanation">` + genusContent.slice(choiceStrictEndIndex, choiceFullEndIndex) + "</p>";
+      choiceExplHTML = `
+    <p class="choice-explanation">` + genusContent.slice(choiceStrictEndIndex, choiceFullEndIndex).trim() + "</p>";
     }
     else {choiceExplHTML = "";}
     choiceExplHTML = choiceExplHTML.replace(/\t/g, "");
@@ -55,18 +57,34 @@ allGeneraLines.forEach((genusLine, genusNum) => {
       coupletReferralValue = choice[3].match(coupletReferralValueRex);
       if (coupletReferralValue !== null) {
         if (coupletReferralValue[0].length === choice[3].length) {
-          coupletValueHTML = `<a href="#${genusLine[1]}${coupletReferralValue[0]}">${coupletReferralValue[0]}</a>`;
+          coupletValueHTML = `<a href="#${genusNameConverted}-${coupletReferralValue[0]}">${coupletReferralValue[0]}</a>`;
         } else {coupletValueHTML = coupletReferralValue[0];}
       } else {coupletValueHTML = choice[3];}
-      if (coupletLabel[3] === "a") {firstCoupletChoiceID = ` id="${genusLine[1]}${coupletLabel[2]}"`;}
-      coupletChoiceHTML = ` ` + `<li class="choice numbered couplet${coupletLabel[2]}"${firstCoupletChoiceID}><div class="choice-line1"><span class="choice-number">${coupletLabel[1]}</span><span class="choice-label">${coupletLabel[4]}</span><span class="dot-leader"></span><span class="choice-value">${coupletValueHTML}</span></div><div class="dots"></div>${choiceExplHTML}</li>` + br;
+      if (coupletLabel[3] === "a") {firstCoupletChoiceID = ` id="${genusNameConverted}-${coupletLabel[2]}"`;}
+      coupletChoiceHTML = `
+  <li class="choice numbered couplet${coupletLabel[2]}"${firstCoupletChoiceID}>
+    <div class="choice-line1">
+      <span class="choice-number">${coupletLabel[1]}</span><span class="choice-label">${coupletLabel[4]}</span>
+      <span class="choice-value">${coupletValueHTML}</span>
+    </div>
+    <div class="dots"></div>${choiceExplHTML}
+  </li>
+`;
     }
     else {
-      coupletChoiceHTML = ` ` + `<li class="choice numberless"><div class="choice-line1"><span class="choice-label">${choice[2]}</span><span class="dot-leader"></span><span class="choice-value">${choice[3]}</span></div><div class="dots"></div>${choiceExplHTML}</li>` + br;
+      coupletChoiceHTML = `
+  <li class="choice numberless">
+    <div class="choice-line1">
+      <span class="choice-label">${choice[2]}</span>
+      <span class="choice-value">${choice[3]}</span>
+    </div>
+    <div class="dots"></div>${choiceExplHTML}
+  </li>
+`;
     }
     genusHTML = genusHTML + coupletChoiceHTML;
   });
-  genusHTML = genusHTML +  `</ol></div>` + br;
+  genusHTML = genusHTML + br + `</ol></div>` + br;
   allGeneraHTML = allGeneraHTML + genusHTML;
 });
 
@@ -74,3 +92,5 @@ allGeneraHTML = setItalics(allGeneraHTML);
 
 let displayThis = document.querySelector("#display-this");
 displayThis.innerHTML = allGeneraHTML;
+let printHTML = document.querySelector("#print-html");
+printHTML.textContent = allGeneraHTML;

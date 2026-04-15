@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="J. van der Linden">
+<link rel="stylesheet" href="dot-leaders.css">
+<title>Dichotomous key HTML generator</title>
+</head>
+<body>
+<header>
+<h1>HTML generator for dichotomous key</h1>
+<p>by J. van der Linden</p>
+<p>April 15, 2026</p>
+</header>
+
+<section>
+<h2>Overview</h2>
+<p>In this program, I mocked up the raw text of a fake dichotomous key that is formatted similarly to a real key in DOCX format that a colleague created. A Javascript program accepts the <a href="#raw-text">raw text of the key</a> (which in this case is shown further down on this page) and spits out a <a href="#html-product">more internet-friendly version</a>, complete with dot leaders (..........) and hyperlinks to couplets further down in the key. <b>As long as the raw text being inputted has consistent basic formatting (such as " ... " for all the dot leaders), this program could in theory be used to automatically convert lengthy dichotomous key DOCX documents to internet-friendlier HTML (with hopefully minor adjustments as needed).</b></p>
+<p>Accessory files:</p>
+<ul>
+<li><a href="dot-leaders.js">Javascript (.js) file</a></li>
+<li><a href="dot-leaders.css">CSS (.css) file</a></li>
+</ul>
+</section>
+
+<section id="html-product">
+<h2>More internet-friendly version of key</h2>
+<p id="imperfection">Not perfect, probably still needs work.<br>Test the hyperlinks and try resizing the browser window to see how the dot leaders respond.</p>
+<div id="display-this">
+
+<div class="genus" id="TaxonomicGroup1"><h3><i>Taxonomic Group 1</i> (animals)</h3><ol>
+
+  <li class="choice numbered couplet1" id="TaxonomicGroup1-1">
+    <div class="choice-line1">
+      <span class="choice-number">1a</span><span class="choice-label">Whiskers present</span>
+      <span class="choice-value"><a href="#TaxonomicGroup1-2">2</a></span>
+    </div>
+    <div class="dots"></div>
+  </li>
+
+  <li class="choice numbered couplet1">
+    <div class="choice-line1">
+      <span class="choice-number">1b</span><span class="choice-label">Whiskers absent</span>
+      <span class="choice-value"><a href="#TaxonomicGroup1-3">3</a></span>
+    </div>
+    <div class="dots"></div>
+  </li>
+
+  <li class="choice numbered couplet2" id="TaxonomicGroup1-2">
+    <div class="choice-line1">
+      <span class="choice-number">2a</span><span class="choice-label">Mischievous and sly</span>
+      <span class="choice-value">cat</span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">The friendly feline can be quite devious in order to get its way. A much loved pet, but sometimes outsmarts its humans.</p>
+  </li>
+
+  <li class="choice numbered couplet2">
+    <div class="choice-line1">
+      <span class="choice-number">2b</span><span class="choice-label">Loyal</span>
+      <span class="choice-value">dog</span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">If you want a furry pal who will stand by your side through thick and thin with a goofy grin on their face, a domestic canine may be your best bet, especially if you like walks in the park and games of fetch.</p>
+  </li>
+
+  <li class="choice numbered couplet3" id="TaxonomicGroup1-3">
+    <div class="choice-line1">
+      <span class="choice-number">3a</span><span class="choice-label">Has feathers and a beak</span>
+      <span class="choice-value"><a href="#TaxonomicGroup1-4">4</a></span>
+    </div>
+    <div class="dots"></div>
+  </li>
+
+  <li class="choice numbered couplet3">
+    <div class="choice-line1">
+      <span class="choice-number">3b</span><span class="choice-label">Has scales covering skin all over body</span>
+      <span class="choice-value"><a href="#TaxonomicGroup1-5">5</a></span>
+    </div>
+    <div class="dots"></div>
+  </li>
+
+  <li class="choice numbered couplet4" id="TaxonomicGroup1-4">
+    <div class="choice-line1">
+      <span class="choice-number">4a</span><span class="choice-label">Bright red, sings "what CHEER, wick wick wick"</span>
+      <span class="choice-value"><i>Cardinalis cardinalis</i></span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">Cardinals are a beloved bird whose presence can be the subject of lore or superstition in addition to delight and joy.</p>
+  </li>
+
+  <li class="choice numbered couplet4">
+    <div class="choice-line1">
+      <span class="choice-number">4b</span><span class="choice-label">Dingy brown and gray sparrows, hopping and foraging on fire escapes, alleys, dumpsters, and subway grates</span>
+      <span class="choice-value"><i>Passer domesticus</i></span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">The bane of more refined ornithologists, these birds are nonetheless incredible for their versatility and adaptability, as they have spread around the world and now thrive in most major human settlements.</p>
+  </li>
+
+  <li class="choice numbered couplet5" id="TaxonomicGroup1-5">
+    <div class="choice-line1">
+      <span class="choice-number">5a</span><span class="choice-label">Suns itself on a log, lives in the Mississippi River, has a shell composed of a plastron and carapace</span>
+      <span class="choice-value">turtle</span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">Hooray for these wonderful reptiles. Hosts: Waterways the world over. Distr.: worldwide.</p>
+  </li>
+
+  <li class="choice numbered couplet5">
+    <div class="choice-line1">
+      <span class="choice-number">5b</span><span class="choice-label">Has gills and fins, at home in an aquarium or sought after by sportsmen at competitive tournaments</span>
+      <span class="choice-value">fish</span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">A great children's book prominently featuring these animals is "The Mousehole Cat" by Antonia Barber, with illustrations by Nicola Bayley.</p>
+  </li>
+
+</ol></div>
+
+<div class="genus" id="TaxonomicGroup2"><h3><i>Taxonomic Group 2</i> (native plants of Iowa)</h3><ol>
+
+  <li class="choice numberless">
+    <div class="choice-line1">
+      <span class="choice-label">Cones and needles</span>
+      <span class="choice-value">conifer</span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">Soothing plants that provide a cool atmosphere.</p>
+  </li>
+
+  <li class="choice numberless">
+    <div class="choice-line1">
+      <span class="choice-label">Thorny tree with compound leaves</span>
+      <span class="choice-value">locust</span>
+    </div>
+    <div class="dots"></div>
+    <p class="choice-explanation">Distr.: Pocahontas Co.</p>
+  </li>
+
+</ol></div>
+
+</div>
+</section>
+
+<section id="raw-text">
+<h2>Raw text inputted into the Javascript program</h2>
+<pre id="input-text">
+
+*Taxonomic Group 1* (animals)
+
+1a  Whiskers present ... 2
+1b  Whiskers absent ... 3
+2a  Mischievous and sly ... cat
+
+	The friendly feline can be quite devious in order to get its way. A much loved pet, but sometimes outsmarts its humans.
+
+2b  Loyal ... dog
+
+	If you want a furry pal who will stand by your side through thick and thin with a goofy grin on their face, a domestic canine may be your best bet, especially if you like walks in the park and games of fetch.
+
+3a  Has feathers and a beak ... 4
+3b  Has scales covering skin all over body ... 5
+4a  Bright red, sings "what CHEER, wick wick wick" ... *Cardinalis cardinalis*
+
+	Cardinals are a beloved bird whose presence can be the subject of lore or superstition in addition to delight and joy.
+
+4b  Dingy brown and gray sparrows, hopping and foraging on fire escapes, alleys, dumpsters, and subway grates ... *Passer domesticus*
+
+	The bane of more refined ornithologists, these birds are nonetheless incredible for their versatility and adaptability, as they have spread around the world and now thrive in most major human settlements.
+
+5a  Suns itself on a log, lives in the Mississippi River, has a shell composed of a plastron and carapace ... turtle
+
+	Hooray for these wonderful reptiles. Hosts: Waterways the world over. Distr.: worldwide.
+
+5b  Has gills and fins, at home in an aquarium or sought after by sportsmen at competitive tournaments ... fish
+
+	A great children's book prominently featuring these animals is "The Mousehole Cat" by Antonia Barber, with illustrations by Nicola Bayley.
+
+*Taxonomic Group 2* (native plants of Iowa)
+
+Cones and needles ... conifer
+
+	Soothing plants that provide a cool atmosphere.
+
+Thorny tree with compound leaves ... locust
+
+	Distr.: Pocahontas Co.
+</pre>
+</section>
+
+<section>
+<h2>HTML code output</h2>
+<pre id="print-html"><code>
+&lt;div class="genus" id="TaxonomicGroup1"&gt;&lt;h3&gt;&lt;i&gt;Taxonomic Group 1&lt;/i&gt; (animals)&lt;/h3&gt;&lt;ol&gt;
+
+  &lt;li class="choice numbered couplet1" id="TaxonomicGroup1-1"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;1a&lt;/span&gt;&lt;span class="choice-label"&gt;Whiskers present&lt;/span&gt;
+      &lt;span class="choice-value"&gt;&lt;a href="#TaxonomicGroup1-2"&gt;2&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet1"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;1b&lt;/span&gt;&lt;span class="choice-label"&gt;Whiskers absent&lt;/span&gt;
+      &lt;span class="choice-value"&gt;&lt;a href="#TaxonomicGroup1-3"&gt;3&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet2" id="TaxonomicGroup1-2"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;2a&lt;/span&gt;&lt;span class="choice-label"&gt;Mischievous and sly&lt;/span&gt;
+      &lt;span class="choice-value"&gt;cat&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;The friendly feline can be quite devious in order to get its way. A much loved pet, but sometimes outsmarts its humans.&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet2"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;2b&lt;/span&gt;&lt;span class="choice-label"&gt;Loyal&lt;/span&gt;
+      &lt;span class="choice-value"&gt;dog&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;If you want a furry pal who will stand by your side through thick and thin with a goofy grin on their face, a domestic canine may be your best bet, especially if you like walks in the park and games of fetch.&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet3" id="TaxonomicGroup1-3"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;3a&lt;/span&gt;&lt;span class="choice-label"&gt;Has feathers and a beak&lt;/span&gt;
+      &lt;span class="choice-value"&gt;&lt;a href="#TaxonomicGroup1-4"&gt;4&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet3"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;3b&lt;/span&gt;&lt;span class="choice-label"&gt;Has scales covering skin all over body&lt;/span&gt;
+      &lt;span class="choice-value"&gt;&lt;a href="#TaxonomicGroup1-5"&gt;5&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet4" id="TaxonomicGroup1-4"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;4a&lt;/span&gt;&lt;span class="choice-label"&gt;Bright red, sings "what CHEER, wick wick wick"&lt;/span&gt;
+      &lt;span class="choice-value"&gt;&lt;i&gt;Cardinalis cardinalis&lt;/i&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;Cardinals are a beloved bird whose presence can be the subject of lore or superstition in addition to delight and joy.&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet4"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;4b&lt;/span&gt;&lt;span class="choice-label"&gt;Dingy brown and gray sparrows, hopping and foraging on fire escapes, alleys, dumpsters, and subway grates&lt;/span&gt;
+      &lt;span class="choice-value"&gt;&lt;i&gt;Passer domesticus&lt;/i&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;The bane of more refined ornithologists, these birds are nonetheless incredible for their versatility and adaptability, as they have spread around the world and now thrive in most major human settlements.&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet5" id="TaxonomicGroup1-5"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;5a&lt;/span&gt;&lt;span class="choice-label"&gt;Suns itself on a log, lives in the Mississippi River, has a shell composed of a plastron and carapace&lt;/span&gt;
+      &lt;span class="choice-value"&gt;turtle&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;Hooray for these wonderful reptiles. Hosts: Waterways the world over. Distr.: worldwide.&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numbered couplet5"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-number"&gt;5b&lt;/span&gt;&lt;span class="choice-label"&gt;Has gills and fins, at home in an aquarium or sought after by sportsmen at competitive tournaments&lt;/span&gt;
+      &lt;span class="choice-value"&gt;fish&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;A great children's book prominently featuring these animals is "The Mousehole Cat" by Antonia Barber, with illustrations by Nicola Bayley.&lt;/p&gt;
+  &lt;/li&gt;
+
+&lt;/ol&gt;&lt;/div&gt;
+
+&lt;div class="genus" id="TaxonomicGroup2"&gt;&lt;h3&gt;&lt;i&gt;Taxonomic Group 2&lt;/i&gt; (native plants of Iowa)&lt;/h3&gt;&lt;ol&gt;
+
+  &lt;li class="choice numberless"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-label"&gt;Cones and needles&lt;/span&gt;
+      &lt;span class="choice-value"&gt;conifer&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;Soothing plants that provide a cool atmosphere.&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class="choice numberless"&gt;
+    &lt;div class="choice-line1"&gt;
+      &lt;span class="choice-label"&gt;Thorny tree with compound leaves&lt;/span&gt;
+      &lt;span class="choice-value"&gt;locust&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="dots"&gt;&lt;/div&gt;
+    &lt;p class="choice-explanation"&gt;Distr.: Pocahontas Co.&lt;/p&gt;
+  &lt;/li&gt;
+
+&lt;/ol&gt;&lt;/div&gt;
+</code></pre>
+</section>
+
+</body>
+</html>
