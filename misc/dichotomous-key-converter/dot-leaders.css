@@ -1,0 +1,84 @@
+html, body {
+  font-size: 110%;
+}
+a:visited, a:active, a:default {
+  color: blue;
+}
+section {
+  margin: 50px 0px 50px 0px;
+}
+header, h2 {
+  margin-top: 35px;
+  text-align: center;
+}
+#imperfection {
+  text-align: center;
+}
+h1, header p {
+  margin: 0px;
+  padding: 0px;
+}
+#display-this {
+  width: 90%;
+  border: 1px solid rgb(170, 170, 170);
+  padding: 30px;
+  margin: 35px auto 35px auto;
+}
+#input-text {
+  white-space: pre-wrap;
+  width: 75%;
+  margin: 30px auto 30px auto;
+  padding: 20px;
+  font-family: monospace;
+  background-color: rgb(230, 230, 230);
+}
+.genus h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.genus ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 5px;
+}
+p {
+  margin-left: 25px;
+}
+.choice-line1 {
+  display: flow-root;
+}
+.choice-line1 span {
+  background: white;
+}
+.choice-number {
+  padding-right: 8px;
+}
+.choice-label {
+  padding-right: 4px;
+}
+.choice-value {
+  float: right;
+  padding-left: 4px;
+}
+.dots {
+  position: relative;
+  z-index: -1;
+  top: -5px;
+  border-top: 2px dotted;
+}
+
+
+/* Deprecated styles
+.dichotomous-key {
+  counter-reset: main-step;
+  list-style-type: none;
+}
+.dichotomous-key > li {
+  counter-increment: main-step;
+  counter-reset: sub-step;
+}
+.dichotomous-key > li::before {
+  content: counter(main-step) counter(sub-step, lower-alpha) " ";
+  counter-increment: sub-step;
+  font-weight: bold;
+}*/

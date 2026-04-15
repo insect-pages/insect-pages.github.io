@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="J. van der Linden">
+<link rel="stylesheet" href="dot-leaders.css">
+<script src="dot-leaders.js" defer></script>
+<title>Dichotomous key HTML generator</title>
+</head>
+<body>
+<header>
+<h1>HTML generator for dichotomous key</h1>
+<p>by J. van der Linden</p>
+<p>April 15, 2026</p>
+</header>
+
+<section>
+<h2>Overview</h2>
+<p>In this program, I mocked up the raw text of a fake dichotomous key that is formatted similarly to a real key in DOCX format that a colleague created. A Javascript program accepts the <a href="#raw-text">raw text of the key</a> (which in this case is shown further down on this page) and spits out a <a href="#html-product">more internet-friendly version</a>, complete with dot leaders (..........) and hyperlinks to couplets further down in the key. <b>As long as the raw text being inputted has consistent basic formatting (such as " ... " for all the dot leaders), this program could in theory be used to automatically convert lengthy dichotomous key DOCX documents to internet-friendlier HTML (with hopefully minor adjustments as needed).</b></p>
+<p>Accessory files:</p>
+<ul>
+<li><a href="dot-leaders.js">Javascript (.js) file</a></li>
+<li><a href="dot-leaders.css">CSS (.css) file</a></li>
+</ul>
+</section>
+
+<section id="html-product">
+<h2>More internet-friendly version of key</h2>
+<p id="imperfection">Not perfect, probably still needs work.<br>Test the hyperlinks and try resizing the browser window to see how the dot leaders respond.</p>
+<div id="display-this"></div>
+</section>
+
+<section id="raw-text">
+<h2>Raw text inputted into the Javascript program</h2>
+<pre id="input-text">
+
+*Taxonomic Group 1* (animals)
+
+1a  Whiskers present ... 2
+1b  Whiskers absent ... 3
+2a  Mischievous and sly ... cat
+
+	The friendly feline can be quite devious in order to get its way. A much loved pet, but sometimes outsmarts its humans.
+
+2b  Loyal ... dog
+
+	If you want a furry pal who will stand by your side through thick and thin with a goofy grin on their face, a domestic canine may be your best bet, especially if you like walks in the park and games of fetch.
+
+3a  Has feathers and a beak ... 4
+3b  Has scales covering skin all over body ... 5
+4a  Bright red, sings "what CHEER, wick wick wick" ... *Cardinalis cardinalis*
+
+	Cardinals are a beloved bird whose presence can be the subject of lore or superstition in addition to delight and joy.
+
+4b  Dingy brown and gray sparrows, hopping and foraging on fire escapes, alleys, dumpsters, and subway grates ... *Passer domesticus*
+
+	The bane of more refined ornithologists, these birds are nonetheless incredible for their versatility and adaptability, as they have spread around the world and now thrive in most major human settlements.
+
+5a  Suns itself on a log, lives in the Mississippi River, has a shell composed of a plastron and carapace ... turtle
+
+	Hooray for these wonderful reptiles. Hosts: Waterways the world over. Distr.: worldwide.
+
+5b  Has gills and fins, at home in an aquarium or sought after by sportsmen at competitive tournaments ... fish
+
+	A great children's book prominently featuring these animals is "The Mousehole Cat" by Antonia Barber, with illustrations by Nicola Bayley.
+
+*Taxonomic Group 2* (native plants of Iowa)
+
+Cones and needles ... conifer
+
+	Soothing plants that provide a cool atmosphere.
+
+Thorny tree with compound leaves ... locust
+
+	Distr.: Pocahontas Co.
+</pre>
+</section>
+
+</body>
+</html>
