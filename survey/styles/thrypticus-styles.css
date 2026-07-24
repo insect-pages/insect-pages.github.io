@@ -28,6 +28,15 @@ h2 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+blockquote {
+  font-style: italic;
+}
+blockquote > i {
+  font-style: normal;
+}
+blockquote > .page-number {
+  font-style: normal;
+}
 #title-author {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -60,10 +69,11 @@ h2 {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 300px;
   border-radius: 4px;
   box-shadow: 0px 8px 8px lightgray;
 }
+#bfig {width: 300px;}
+#bfig-thrips {width: 650px;}
 #headmatter {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -250,6 +260,17 @@ h2 {
   margin-left: 20px;
   text-indent: -20px;
 }
+#refs ul {
+  list-style-type: none;
+  margin: 0px 0px 65px 0px;
+  padding: 0;
+}
+#refs li {
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  text-indent: -20px;
+}
 #thrypt-pagebottom-nav {
   display: block;
   margin-left: auto;
@@ -272,7 +293,7 @@ h2 {
   .thr-fig-hldr img {
     max-width: 78vw;
   }
-  .tfig img, #bfig {
+  .tfig img, #bfig, #bfig-thrips {
     max-width: 78vw;
   }
   .thr-fig-nav img {
