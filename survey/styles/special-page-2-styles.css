@@ -1,0 +1,24 @@
+/* SPECIES PAGE TYPE 2 STYLES */
+
+.one-gal-sect {margin-top: 30px;}
+.subgal-intro h3 {display: inline; margin: 0; padding: 0; line-height: inherit; font-size: inherit;}
+.subgal-intro p {display: inline; margin: 0; padding: 0;}
+.subgal {margin-bottom: 15px; padding-bottom: 0px;}
+.subgal-cont {margin-bottom: 20px;}
+.subgal-nav li {list-style-type: disc;}
+.spp-special .gallery-img-cont {
+  align-items: center;
+  /*background-color: rgb(230, 230, 230);*/
+  border-radius: 3px;
+}
+hr {
+  width: 60%;
+  margin: 5px auto 5px auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(220, 220, 220);
+}
+.subgal-cont:last-of-type hr {
+  display: none;
+}
+
