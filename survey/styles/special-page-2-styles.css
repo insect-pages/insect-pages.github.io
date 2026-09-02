@@ -21,4 +21,29 @@ hr {
 .subgal-cont:last-of-type hr {
   display: none;
 }
+.compare-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 20px auto 20px auto;
+  padding: 0px;
+}
+.compare-two figure {
+  width: 100%;
+  margin: 0px auto 0px auto;
+  border: 1px solid rgb(220, 220, 220);
+}
+.compare-two img, .compare-two figcaption {
+  width: 98%; display: block;
+  margin: 8px auto 0px auto;
+}
+ .compare-two figcaption {padding: 0px 12px 10px 12px;}
+
+/* Media queries */
+@media (max-width: 800px) {
+  .compare-two {grid-template-columns: 1fr;}
+}
+@media (min-width: 2300px) {
+  .compare-two img {width: auto;}
+}
 
