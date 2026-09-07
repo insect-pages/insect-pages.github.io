@@ -21,6 +21,19 @@ hr {
 .subgal-cont:last-of-type hr {
   display: none;
 }
+
+/* Two-column navigation */
+.two-column-nav {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.two-column-nav nav > ul {
+  margin: 0px auto 0px auto;
+}
+
+/* Special figure types for certain pages */
 .compare-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,9 +50,16 @@ hr {
   width: 98%; display: block;
   margin: 8px auto 0px auto;
 }
- .compare-two figcaption {padding: 0px 12px 10px 12px;}
+.compare-two figcaption {padding: 0px 12px 10px 12px;}
+
 
 /* Media queries */
+@media (max-width: 1000px) {
+  .two-column-nav nav {
+    flex: 1 0 100%;
+    width: auto;
+  }
+}
 @media (max-width: 800px) {
   .compare-two {grid-template-columns: 1fr;}
 }
