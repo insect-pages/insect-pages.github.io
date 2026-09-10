@@ -1,5 +1,6 @@
 /* SPECIES PAGE TYPE 2 STYLES */
 
+.no-brk {white-space: nowrap;}
 .one-gal-sect {margin-top: 30px;}
 .subgal-intro h3 {display: inline; margin: 0; padding: 0; line-height: inherit; font-size: inherit;}
 .subgal-intro p {display: inline; margin: 0; padding: 0;}
@@ -51,7 +52,28 @@ hr {
   margin: 8px auto 0px auto;
 }
 .compare-two figcaption {padding: 0px 12px 10px 12px;}
-
+.thumb-links-row {
+  list-style-type: none;
+  margin: 12px 0px 12px 0px; padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#turnaround-thumbs-row li {
+  margin: 8px; padding: 0px;
+  width: 250px;
+}
+#turnaround-thumbs-row figure {
+  width: 100%;
+  border: 1px solid rgb(200, 200, 200);
+  margin: 0; padding: 3px;
+}
+#turnaround-thumbs-row img {
+  width: 100%;
+}
+#larva-from-record_ #record-details,
+#larva-from-record_ .lnktop {
+  display: none;
+}
 
 /* Media queries */
 @media (max-width: 1000px) {
@@ -62,6 +84,16 @@ hr {
 }
 @media (max-width: 800px) {
   .compare-two {grid-template-columns: 1fr;}
+}
+@media (max-width: 500px) {
+  #turnaround-thumbs-row li {
+    width: 100%;
+  }
+  #turnaround-thumbs-row figure {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 2300px) {
   .compare-two img {width: auto;}
