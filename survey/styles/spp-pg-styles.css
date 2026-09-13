@@ -20,11 +20,9 @@ abbr {text-decoration: none;}
 }
 
 /* Special species pages */
-.spp-special .gn {display: none;}
-.spp-special #record-details .h2-cont {display: none;}
-.spp-special #intra-nav {display: none;}
-.spp-special #record-details table {display: none;}
-.spp-special #record-details {border-bottom: none; margin-bottom: 0px; padding-bottom: 0px;}
+#favorit_ #record-details {border-bottom: none;}
+#larvae-turning-ar_ #intra-nav {display: none;}
+.spp-special #record-details {margin-bottom: 0px; padding-bottom: 0px; border-bottom: none;}
 .spp-special #record-gallery {margin-top: 30px;}
 .spp-special #record-gallery h3 {display: inline; margin: 0; padding: 0; line-height: inherit; font-size: inherit;}
 .spp-special #record-gallery p {display: inline; margin: 0; padding: 0;}
@@ -50,14 +48,28 @@ main {
 }
 
 /* Top nav in main section */
+nav.gn {font-size: 0.9rem;}
 nav.gn a {margin: 0;}
 nav.gn {width: auto;} /* calc(100% - 600px) */
-.rarr {
+.rarr { /* replace someday with \25B6; see below */
   margin-left: 7px;
   margin-right: 7px;
   color: rgb(180, 180, 180);
   font-size: 0.8rem;
 }
+/*
+For accessibility, need to make gn into a list
+and replace the actual triangles with ones in-
+serted via CSS (but keep the actual triangles
+as a backup!). Use Unicode esc seq "\25B6" (or
+the actual character "▶" but that is less safe)
+nav.gn ul li + li::before {
+  content: "\25B6";
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+*/
 
 /* Headings */
 h1 {
@@ -411,13 +423,14 @@ footer {
 /* Tempted to move all this to surveywide-styles? See [1] */
   /* Fonts */
   /*html, body {font-size: 11px;}*/ /* 8pt*/
+  nav.gn {font-size: 0.5rem;}
   .lnktop, .lnkall, .lnkq {font-size: 0.5rem;}
   h2 .lnktop {font-size: 0.5rem;}
   .h2-links .lnktop, .h2-links .lnkq {font-size: 0.5rem;}
   h2 a {font-size: 0.5rem;}
   .spp-pg h1 {font-size: 0.8rem;}
   .spp-pg h2 {font-size: 0.6rem;}
-  #intra-nav {font-size: 0.6rem;}
+  #intra-nav {font-size: 0.5rem;}
   .rarr {font-size: 0.4rem;}
   #record-details, #record-images, #record-gallery, #record-references, #record-specdata, #record-metadata {font-size: 0.5rem;}
   .img-n {font-size: 0.5rem; padding: 2px;}

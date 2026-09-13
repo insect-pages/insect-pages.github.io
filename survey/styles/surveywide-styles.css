@@ -168,6 +168,7 @@ I've placed these styles here in case I want to standardize them someday.
 }
 
 /*Intra-page navigation (species & genus pgs.)*/
+#intra-nav {font-size: 0.9rem;}
 #intra-nav nav {
   display: flex;
 }
@@ -177,16 +178,87 @@ I've placed these styles here in case I want to standardize them someday.
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+#intra-nav ul li + li::before {
+  content: "\2022"; /* or "•" (less safe) */
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+#intra-nav > nav > ul {
   margin-left: 10px;
 }
 #intra-nav li {
+  display: flex;
   padding: 0px;
   margin: 0px;
 }
+#pg-contents, #intra-nav a {
+  white-space: nowrap;
+}
+#intra-nav ul, #intra-nav li {
+  flex-wrap: wrap;
+}
 .circ {
+  display: none;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 0.7rem;
+}
+#intra-nav > nav > ul > li > ul::before {
+  content: "(";
+  margin-left: 10px;
+}
+#intra-nav > nav > ul > li > ul::after {
+  content: ")";
+}
+.o { /* Parenthesis for one-line intra-nav */
+  margin-left: 10px;
+}
+.parenth {
+  display: none;
+}
+
+/* Intra-nav specifically for special pages type 1 & 2 */
+.spp-special #intra-nav nav {
+  display: block;
+  float: left;
+  min-width: 165px;
+  border: 1px solid rgb(210, 210, 210);
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  margin: 0px 20px 20px 0px;
+  padding: 10px;
+}
+.spp-special section:nth-of-type(2) {
+  clear: both;
+}
+.spp-special #intra-nav ul {
+  display: block;
+}
+.spp-special #intra-nav ul li ul {
+  margin-left: 8px;
+}
+.spp-special #intra-nav ul li + li::before {
+  content: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.spp-special #intra-nav > nav > ul {
+  margin-left: 0px;
+}
+.spp-special #intra-nav li {
+  display: block;
+}
+.spp-special #pg-contents, .spp-special #intra-nav a {
+  white-space: normal;
+}
+.spp-special #intra-nav > nav > ul > li > ul::before {
+  content: none;
+  margin-left: 0px;
+}
+.spp-special #intra-nav > nav > ul > li > ul::after {
+  content: none;
 }
 
 /* "Bonus" images ("topimg", "sideimg")
@@ -195,7 +267,9 @@ Hoping to add these to spp. pgs. too */
 .topfig-ctr { /* in, e.g., pages/cryptotaenia-beetles */
   width: min-content;
   display: block;
-  margin: 20px auto 12px auto;
+  margin: 35px auto 15px auto;
+  box-shadow: 0px 0px 8px rgb(180, 180, 180);
+  border-radius: 8px;
 }
 .topfig-ctr figcaption {margin: 0px auto 0px auto; text-align: center; font-size: 0.9rem;}
 
@@ -309,6 +383,12 @@ span.cite {
   }
 }
 @media (max-width: 850px) {
+  .spp-special #intra-nav nav {
+    display: block;
+    float: none;
+    width: auto;
+    min-width: auto;
+  }
   #intra-nav nav {
     flex-direction: column;
   }
@@ -318,9 +398,28 @@ span.cite {
     padding: 0px;
     margin: 0px;
   }
+  #intra-nav ul li + li::before {
+    content: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #intra-nav > nav > ul {
+    margin-left: 0px;
+  }
   #intra-nav li {
+    flex-direction: column;
     padding: 0px;
     margin: 0px;
+  }
+  #intra-nav > nav > ul > li > ul::before {
+    content: none;
+    margin-left: 0px;
+  }
+  #intra-nav > nav > ul > li > ul::after {
+    content: none;
+  }
+  #intra-nav .parenth {
+    display: none;
   }
   .circ {
     display: none;
@@ -353,7 +452,8 @@ span.cite {
   /* Fonts */
   html, body {font-size: 11px;} /* 8pt*/
   header {font-size: 0.8rem;}
-  nav.top, nav.gn, #intra-nav {font-size: 0.7rem;}
+  nav.top {font-size: 0.7rem;}
+  nav.gn, #intra-nav {font-size: 0.5rem;}
   .gen-pg h1, .spp-pg h1 {font-size: 0.8rem;}
   .citebacks {font-size: 0.8rem;}
   .topfig-ctr figcaption {font-size: 0.7rem;}

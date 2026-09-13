@@ -94,6 +94,9 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
+  .two-column-nav ul {
+    margin-left: 2px; padding-left: 10px;
+  }
 }
 @media (min-width: 2300px) {
   .compare-two img {width: auto;}
