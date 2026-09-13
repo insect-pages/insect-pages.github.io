@@ -21,6 +21,7 @@ abbr {text-decoration: none;}
 
 /* Special species pages */
 #favorit_ #record-details {border-bottom: none;}
+#favorit_ #intra-nav, #favorit_ #record-details .h2-cont {display: none;}
 #larvae-turning-ar_ #intra-nav {display: none;}
 .spp-special #record-details {margin-bottom: 0px; padding-bottom: 0px; border-bottom: none;}
 .spp-special #record-gallery {margin-top: 30px;}
