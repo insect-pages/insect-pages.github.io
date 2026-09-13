@@ -1,0 +1,444 @@
+/* Styles for author page */
+
+html {
+  font-size: 110%;
+}
+body {
+  background-color: rgb(40, 40, 40);
+  font-family: "Times New Roman", "Lucida Bright", Verdana;
+  font-size: 100%;
+  line-height: 1.4;
+  color: rgb(215, 215, 215);
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+/* Basic styles and layout of main body container */
+#jvdl-hero {
+  display: flex;
+  width: 98%;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+.sidepic figure, #center-photo figure {
+  display: block;
+  margin: 0px;
+}
+#center-photo figure {
+  width: min-content;
+}
+#center-photo img {
+  padding: 9px;
+  border: 1px solid lightgray;
+}
+.obj-holder {
+  display: block;
+  width: 380px;
+  height: 400px;
+}
+.sidepic, #btns-right {
+  width: 100%;
+} 
+#btns-right div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+pre { 
+  font-family: "SourceCodePro-Medium", monospace;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: transparent;
+  width: min-content;
+  height: min-content;
+}
+.sideleft {margin-top: 105px;}
+.sideright {margin-top: 0px;}
+.sideleft pre {
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;
+}
+.sideleft pre span {color: greenyellow;}
+.sideright pre {
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  padding: 0px;
+  width: 375px;
+  /* Width set here because otherwise,
+  at 500% zoom the resizing of <pre>
+  at each frame of animation is evident */
+}
+
+/* Styles for main website navigation block */
+ul {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.0rem;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+li {
+  display: block;
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1.1;
+}
+ul a {
+  color: rgb(215, 215, 215);
+}
+ul a:visited {
+  color: rgb(215, 215, 215);
+}
+
+/* Styles for ASCII drawing at bottom of page */
+#katydid-container {
+  display: block;
+  position: relative;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+#neoconocephalus {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+#katydid-container figcaption {
+  display: none;
+  position: absolute;
+  right: -150px; top: -40px;
+  padding: 5px;
+  width: 150px;
+  height: 100px;
+  background-color: rgb(215, 215, 215);
+  color: rgb(10, 10, 10);
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
+}
+#katydid-container:hover figcaption {
+  display: block;
+}
+#katydid-container a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+
+/*======================================*/
+/* Styles for animation control buttons */
+.btn-top-cont {
+  width: 100%;
+  height: 40px;
+  margin-top: 22px;
+}
+.top-choices {
+  padding: 0px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.top-choices fieldset {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  padding: 0px;
+  margin: 0px;
+}
+.top-choices legend {
+  line-height: 1.1;
+  padding: 0px;
+  margin: 0px;
+}
+.top-choices input {
+  padding: 0px;
+  margin: 0px;
+}
+.top-choices label {
+  color: steelblue;
+  padding: 0px;
+  margin-right: 10px;
+}
+.top-choices label:hover {
+  cursor: pointer;
+}
+.stat-placeholder {
+  background-color: transparent;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 25px;
+}
+.stat-cont {
+  width: 262px;
+  margin-left: 0px;
+  margin-right: auto;
+}
+.statlabel {
+  width: 92px;
+  height: 100%;
+  text-align: right;
+  padding-right: 6px;
+}
+.statnum {
+  width: 45px;
+  height: 100%;
+  text-align: left;
+  padding-left: 6px;
+}
+.statbar {
+  width: 125px;
+  height: 100%;
+}
+.fillbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 10px;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 2px;
+}
+.filler {
+  background-color: rgb(215, 215, 215);
+  height: 100%;
+}
+.btn-main-cont {
+  height: 86px;
+/*main buttons: 40px*/
+/*hotkeys img+pdg+expl=44px*/
+}
+#btns-main-right .btn-cont1 {
+  display: flex;
+  flex-direction: row;
+}
+#btns-main-right .btn-cont2 {
+  display: flex;
+  flex-direction: row;
+}
+.birdBtn {
+  height: 40px;
+  line-height: 1.1;
+}
+.ctrls {
+  border: 1px solid black;
+  color: black;
+  background-color: rgb(180, 180, 180);
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.ctrl-main {
+  font-size: 24px;
+  font-family: monospace;
+  width: 50px;
+}
+.ctrls:hover {
+  background-color: darkblue;
+  color: lightgray;
+}
+.turned-off {
+  color: rgb(130, 130, 130);
+  opacity: 0.4;
+}
+.turned-off:hover {
+  background-color: rgb(215, 215, 215);
+  color: rgb(130, 130, 130);
+}
+.turned-on {
+  color: black;
+  background-color: rgb(180, 180, 180);
+}
+.turned-on:hover {
+  background-color: darkblue;
+  color: lightgray;
+}
+.btn-cont2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.change-btn {
+  display: block;
+  margin-top: 6px;
+  padding: 0px;
+  border: none;
+  color: steelblue;
+  font-size: 0.9rem;
+  font-family: "Times New Roman", "Lucida Bright", Verdana;
+  background-color: transparent;
+}
+.change-btn:hover {
+  cursor: pointer;
+}
+.hotkeys-btn {
+  position: relative;
+  width: 90px;
+  height: 44px;
+  padding-left: 5px;
+  padding-top: 6px;
+  margin-right: 70px;
+  margin-bottom: 16px;
+/*img height plus this-padding 
+plus img-padding is 44px*/
+/*img+pdg+expl is 16+28=44*/
+/*img-width+pdg=85+5=90px*/
+}
+.hotkeys-btn button {
+  border: none;
+  background-color: transparent;
+  width: 85px; height: 38px;
+  padding: 0px; margin: 0px;
+}
+.hotkeys-btn button:hover {
+  cursor: pointer;
+}
+.hotkeys-btn img {
+/* 85x22px */
+  display: block;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 16px;
+  margin: 0px;
+}
+.expl {
+  position: absolute;
+  left: 0px; top: 34px;
+  width: 320px;
+  height: 16px;
+  color: rgb(175, 175, 175);
+  font-size: 13px;
+  z-index: 1;
+}
+.expl div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 2px;
+  line-height: 1;
+  margin-right: 3px;
+}
+.expl div:not(:first-of-type) {
+  margin-left: 10px;
+}
+.expl div:first-of-type {
+  margin-left: 5px;
+}
+.hotkeys-tip {
+  display: none;
+  position: absolute;
+  right: 70px; top: 0px;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(215, 215, 215);
+  color: rgb(10, 10, 10);
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
+}
+.play {
+  width: 44px;
+  background-color: transparent;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 0px;
+  border-radius: 3px;
+  color: rgb(215, 215, 215);
+  margin-left: 4px;
+}
+.cross {
+  font-size: 1.5rem;
+}
+.play:hover {
+  background-color: lightgray;
+}
+.triangle:hover {
+  color: green;
+}
+.cross:hover {
+  color: red;
+}
+
+/*======================================*/
+/* MEDIA QUERIES */
+@media (max-width: 1075px) {
+  body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+  h1 {
+    margin-bottom: 22px;
+  }
+  #jvdl-hero {
+    width: 100%;
+    flex-direction: column;
+    border: 2px dotted rgb(215, 215, 215);
+    border-radius: 10px;
+  }
+  .obj-holder {
+    height: min-content;
+    width: 100%;
+  }
+  .sidepic {
+    margin: 0px;
+  }
+  #left-container {
+    margin-top: 30px;
+  }
+  #right-container {
+    margin-bottom: 2px;
+  }
+  pre {
+    font-size: 0.8rem;
+  }
+  #center-photo figure {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #center-photo img {
+    margin-top: 20px;
+    padding: 8px;
+    border: 1px solid rgb(215, 215, 215);
+  }
+  ul {
+    margin-top: 30px;
+  }
+  #katydid-container {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #katydid-container figcaption {
+    top: -150px; right: 0px;
+  }
+}
