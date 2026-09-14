@@ -347,6 +347,9 @@ span.cite {
 #record0801 #copy-yr::after {
   content: ', 2023-2026 (Record Details text on this page: CC BY-NC-SA 3.0)';
 }
+#stem-stu_ #copy-yr::after {
+  content: ', 2023-2026 (except Cephus drawings in Related Reports section, which are in the public domain)'
+}
 .copy {
   display: block;
   margin-left: auto;

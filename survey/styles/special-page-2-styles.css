@@ -29,6 +29,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  clear: both;
 }
 .two-column-nav nav > ul {
   margin: 0px auto 0px auto;
