@@ -76,6 +76,37 @@ hr {
   display: none;
 }
 
+/* For art page */
+.art-table {
+  width: 96%;
+  border-collapse: collapse;
+  border: 1px solid rgb(90, 90, 90);
+  margin: 10px auto 10px auto;
+  font-size: 0.9rem;
+}
+.art-table thead th {
+  padding: 4px;
+  text-align: left;
+  background-color: rgb(220, 248, 220);
+  border: 1px solid rgb(180, 180, 180);
+}
+.art-table caption {font-size: 0.8rem;}
+.art-table td {
+  padding: 4px;
+  border: 1px solid rgb(180, 180, 180);
+  background-color: white;
+}
+.art-table tr td:nth-of-type(1) img {
+  width: 125px;
+  height: auto;
+}
+.art-table tr td:nth-of-type(1) {width: 150px;}
+.art-table tr td:nth-of-type(2) {width: 100px;}
+.art-table tr td:nth-of-type(4) ul {
+  margin-left: 18px;
+  padding: 0;
+}
+
 /* Media queries */
 @media (max-width: 1000px) {
   .two-column-nav nav {

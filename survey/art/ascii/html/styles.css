@@ -1,0 +1,57 @@
+/* ASCII art HTML page styles */
+
+/* Special for bee.html */
+#bee {
+  background-color: rgb(55, 55, 55);
+}
+#bee code {color: yellow;}
+#bee #bottom-links {
+  background-color: rgb(215 200 150 / 75%);
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* General */
+body {
+  background-color: rgb(248, 248, 248);
+}
+body > div {
+  display: flex;
+  width: 100%;
+  min-height: 88vh;
+  align-items: center;
+  justify-content: center;
+}
+#bottom-links p {
+  font-family: Helvetica, Arial, "Times New Roman", "Lucida Bright", Verdana, sans-serif;
+  font-size: 0.9rem;
+  margin: 4px 0px 4px 0px;
+}
+#bottom-links a:visited {
+  color: darkblue;
+}
+#bottom-links .logo {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 5px;
+}
+#bottom-links .logo#L {
+  margin-right: 8px;
+}
+#bottom-links .logo#R {
+  margin-left: 8px;
+}
+pre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  background-color: transparent;
+} 
+code {
+  background-color: transparent;
+  color: black;
+  font-size: 1.1rem;
+}
