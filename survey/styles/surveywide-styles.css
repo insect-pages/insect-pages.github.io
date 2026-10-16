@@ -350,6 +350,9 @@ span.cite {
 #stem-stu_ #copy-yr::after {
   content: ', 2023-2026 (except Cephus drawings in Related Reports section, which are in the public domain)'
 }
+#record0040 #copy-yr::after {
+  content: ', 2023-2026 (except image 40-10, which is in the public domain)'
+}
 .copy {
   display: block;
   margin-left: auto;
